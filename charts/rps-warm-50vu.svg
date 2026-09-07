@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 340" font-family="Segoe UI, Tahoma, Arial, sans-serif">
+  <style>
+    .lbl { font-size: 14px; fill: #888e99; }
+    .val { font-size: 14px; font-weight: 600; fill: #888e99; }
+    .hdr { font-size: 17px; font-weight: 700; fill: #7d8590; }
+    .sub { font-size: 12px; fill: #7d8590; }
+    .base { fill: #9aa2af; }
+    .lsc  { fill: #3fb950; }
+  </style>
+  <text x="20" y="30" class="hdr">Warm-cache throughput — 50 concurrent users (requests/second)</text>
+  <text x="20" y="50" class="sub">Round 1 · 2026-09 · self-test¹ · higher is better · median of 3 × 60 s runs</text>
+
+  <!-- Nginx -->
+  <text x="20" y="93" class="lbl">Nginx — no cache</text>
+  <rect x="250" y="80" width="20" height="16" rx="3" class="base"/>
+  <text x="278" y="93" class="val">7.4</text>
+  <text x="20" y="118" class="lbl">Nginx — LiteSpeed Cache</text>
+  <rect x="250" y="105" width="18" height="16" rx="3" class="lsc"/>
+  <text x="276" y="118" class="val">6.4 (page cache inert)</text>
+
+  <!-- Apache -->
+  <text x="20" y="158" class="lbl">Apache — no cache</text>
+  <rect x="250" y="145" width="20" height="16" rx="3" class="base"/>
+  <text x="278" y="158" class="val">7.3</text>
+  <text x="20" y="183" class="lbl">Apache — LiteSpeed Cache</text>
+  <rect x="250" y="170" width="18" height="16" rx="3" class="lsc"/>
+  <text x="276" y="183" class="val">6.4 (page cache inert)</text>
+
+  <!-- OLS -->
+  <text x="20" y="223" class="lbl">OpenLiteSpeed — no cache</text>
+  <rect x="250" y="210" width="20" height="16" rx="3" class="base"/>
+  <text x="278" y="223" class="val">7.3</text>
+  <text x="20" y="248" class="lbl">OpenLiteSpeed — LiteSpeed Cache</text>
+  <rect x="250" y="235" width="536" height="16" rx="3" class="lsc"/>
+  <text x="250" y="268" class="val">194.9 — ×26.7 vs no cache</text>
+
+  <text x="20" y="305" class="sub">¹ load generator ran on the target server itself; external re-measurement pending.</text>
+  <text x="20" y="322" class="sub">Turbo · WP Rocket · W3TC · WP Super Cache · WP Fastest Cache — coming in this round.</text>
+</svg>
