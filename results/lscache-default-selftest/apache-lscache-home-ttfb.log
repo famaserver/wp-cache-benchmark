@@ -1,0 +1,16 @@
+[apache-lscache-home] run 1: 945.8 ms
+[apache-lscache-home] run 2: 918.3 ms
+[apache-lscache-home] run 3: 904.5 ms
+[apache-lscache-home] run 4: 945.7 ms
+[apache-lscache-home] run 5: 907.8 ms
+[apache-lscache-home] run 6: 919.6 ms
+[apache-lscache-home] run 7: 927.0 ms
+[apache-lscache-home] run 8: 907.7 ms
+[apache-lscache-home] run 9: 891.1 ms
+[apache-lscache-home] run 10: 931.8 ms
+[apache-lscache-home] run 11: 908.9 ms
+[apache-lscache-home] run 12: 893.4 ms
+[apache-lscache-home] run 13: 904.5 ms
+[apache-lscache-home] run 14: 912.8 ms
+[apache-lscache-home] run 15: 920.1 ms
+[apache-lscache-home] median=912.8 ms  p95=945.7 ms  min=891.1  max=945.8  (n=15)

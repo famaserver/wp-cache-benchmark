@@ -1,0 +1,16 @@
+[apache-lscache-shop] run 1: 765.4 ms
+[apache-lscache-shop] run 2: 813.2 ms
+[apache-lscache-shop] run 3: 763.1 ms
+[apache-lscache-shop] run 4: 759.3 ms
+[apache-lscache-shop] run 5: 767.1 ms
+[apache-lscache-shop] run 6: 781.6 ms
+[apache-lscache-shop] run 7: 753.8 ms
+[apache-lscache-shop] run 8: 757.6 ms
+[apache-lscache-shop] run 9: 774.5 ms
+[apache-lscache-shop] run 10: 769.7 ms
+[apache-lscache-shop] run 11: 759.2 ms
+[apache-lscache-shop] run 12: 759.0 ms
+[apache-lscache-shop] run 13: 789.8 ms
+[apache-lscache-shop] run 14: 780.7 ms
+[apache-lscache-shop] run 15: 780.7 ms
+[apache-lscache-shop] median=767.1 ms  p95=789.8 ms  min=753.8  max=813.2  (n=15)

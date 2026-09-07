@@ -1,0 +1,10 @@
+[nginx-lscache-cold-r1] run 1: 1120.8 ms
+[nginx-lscache-cold-r1] median=1120.8 ms  p95=1120.8 ms  min=1120.8  max=1120.8  (n=1)
+[nginx-lscache-cold-r2] run 1: 4096.4 ms
+[nginx-lscache-cold-r2] median=4096.4 ms  p95=4096.4 ms  min=4096.4  max=4096.4  (n=1)
+[nginx-lscache-cold-r3] run 1: 977.2 ms
+[nginx-lscache-cold-r3] median=977.2 ms  p95=977.2 ms  min=977.2  max=977.2  (n=1)
+[nginx-lscache-cold-r4] run 1: 956.5 ms
+[nginx-lscache-cold-r4] median=956.5 ms  p95=956.5 ms  min=956.5  max=956.5  (n=1)
+[nginx-lscache-cold-r5] run 1: 970.4 ms
+[nginx-lscache-cold-r5] median=970.4 ms  p95=970.4 ms  min=970.4  max=970.4  (n=1)

@@ -1,0 +1,10 @@
+[apache-lscache-cold-r1] run 1: 991.3 ms
+[apache-lscache-cold-r1] median=991.3 ms  p95=991.3 ms  min=991.3  max=991.3  (n=1)
+[apache-lscache-cold-r2] run 1: 974.1 ms
+[apache-lscache-cold-r2] median=974.1 ms  p95=974.1 ms  min=974.1  max=974.1  (n=1)
+[apache-lscache-cold-r3] run 1: 965.6 ms
+[apache-lscache-cold-r3] median=965.6 ms  p95=965.6 ms  min=965.6  max=965.6  (n=1)
+[apache-lscache-cold-r4] run 1: 944.4 ms
+[apache-lscache-cold-r4] median=944.4 ms  p95=944.4 ms  min=944.4  max=944.4  (n=1)
+[apache-lscache-cold-r5] run 1: 937.0 ms
+[apache-lscache-cold-r5] median=937.0 ms  p95=937.0 ms  min=937.0  max=937.0  (n=1)

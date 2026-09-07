@@ -1,0 +1,16 @@
+[ols-lscache-home] run 1: 172.7 ms
+[ols-lscache-home] run 2: 151.3 ms
+[ols-lscache-home] run 3: 153.0 ms
+[ols-lscache-home] run 4: 151.8 ms
+[ols-lscache-home] run 5: 170.9 ms
+[ols-lscache-home] run 6: 152.6 ms
+[ols-lscache-home] run 7: 151.7 ms
+[ols-lscache-home] run 8: 152.0 ms
+[ols-lscache-home] run 9: 155.3 ms
+[ols-lscache-home] run 10: 153.1 ms
+[ols-lscache-home] run 11: 151.3 ms
+[ols-lscache-home] run 12: 151.3 ms
+[ols-lscache-home] run 13: 151.2 ms
+[ols-lscache-home] run 14: 153.4 ms
+[ols-lscache-home] run 15: 152.7 ms
+[ols-lscache-home] median=152.6 ms  p95=170.9 ms  min=151.2  max=172.7  (n=15)

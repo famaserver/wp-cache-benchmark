@@ -1,0 +1,16 @@
+[ols-lscache-shop] run 1: 159.3 ms
+[ols-lscache-shop] run 2: 153.0 ms
+[ols-lscache-shop] run 3: 154.2 ms
+[ols-lscache-shop] run 4: 155.6 ms
+[ols-lscache-shop] run 5: 150.5 ms
+[ols-lscache-shop] run 6: 156.7 ms
+[ols-lscache-shop] run 7: 156.6 ms
+[ols-lscache-shop] run 8: 151.2 ms
+[ols-lscache-shop] run 9: 150.2 ms
+[ols-lscache-shop] run 10: 154.6 ms
+[ols-lscache-shop] run 11: 152.0 ms
+[ols-lscache-shop] run 12: 168.3 ms
+[ols-lscache-shop] run 13: 156.4 ms
+[ols-lscache-shop] run 14: 153.6 ms
+[ols-lscache-shop] run 15: 153.4 ms
+[ols-lscache-shop] median=154.2 ms  p95=159.3 ms  min=150.2  max=168.3  (n=15)

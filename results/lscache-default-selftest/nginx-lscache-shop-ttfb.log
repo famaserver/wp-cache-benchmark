@@ -1,0 +1,16 @@
+[nginx-lscache-shop] run 1: 797.1 ms
+[nginx-lscache-shop] run 2: 783.7 ms
+[nginx-lscache-shop] run 3: 791.2 ms
+[nginx-lscache-shop] run 4: 769.6 ms
+[nginx-lscache-shop] run 5: 805.9 ms
+[nginx-lscache-shop] run 6: 796.5 ms
+[nginx-lscache-shop] run 7: 804.9 ms
+[nginx-lscache-shop] run 8: 791.1 ms
+[nginx-lscache-shop] run 9: 829.3 ms
+[nginx-lscache-shop] run 10: 780.7 ms
+[nginx-lscache-shop] run 11: 743.1 ms
+[nginx-lscache-shop] run 12: 749.5 ms
+[nginx-lscache-shop] run 13: 787.5 ms
+[nginx-lscache-shop] run 14: 763.1 ms
+[nginx-lscache-shop] run 15: 763.3 ms
+[nginx-lscache-shop] median=787.5 ms  p95=805.9 ms  min=743.1  max=829.3  (n=15)

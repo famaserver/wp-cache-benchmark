@@ -1,0 +1,10 @@
+[ols-lscache-cold-r1] run 1: 2286.8 ms
+[ols-lscache-cold-r1] median=2286.8 ms  p95=2286.8 ms  min=2286.8  max=2286.8  (n=1)
+[ols-lscache-cold-r2] run 1: 2294.7 ms
+[ols-lscache-cold-r2] median=2294.7 ms  p95=2294.7 ms  min=2294.7  max=2294.7  (n=1)
+[ols-lscache-cold-r3] run 1: 2290.1 ms
+[ols-lscache-cold-r3] median=2290.1 ms  p95=2290.1 ms  min=2290.1  max=2290.1  (n=1)
+[ols-lscache-cold-r4] run 1: 2282.1 ms
+[ols-lscache-cold-r4] median=2282.1 ms  p95=2282.1 ms  min=2282.1  max=2282.1  (n=1)
+[ols-lscache-cold-r5] run 1: 2278.9 ms
+[ols-lscache-cold-r5] median=2278.9 ms  p95=2278.9 ms  min=2278.9  max=2278.9  (n=1)
