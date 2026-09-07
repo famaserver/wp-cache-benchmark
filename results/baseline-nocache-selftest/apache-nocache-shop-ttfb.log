@@ -1,0 +1,16 @@
+[apache-nocache-shop] run 1: 714.2 ms
+[apache-nocache-shop] run 2: 703.5 ms
+[apache-nocache-shop] run 3: 707.4 ms
+[apache-nocache-shop] run 4: 689.1 ms
+[apache-nocache-shop] run 5: 715.0 ms
+[apache-nocache-shop] run 6: 691.3 ms
+[apache-nocache-shop] run 7: 687.2 ms
+[apache-nocache-shop] run 8: 694.0 ms
+[apache-nocache-shop] run 9: 719.0 ms
+[apache-nocache-shop] run 10: 718.7 ms
+[apache-nocache-shop] run 11: 708.4 ms
+[apache-nocache-shop] run 12: 710.7 ms
+[apache-nocache-shop] run 13: 721.1 ms
+[apache-nocache-shop] run 14: 705.9 ms
+[apache-nocache-shop] run 15: 697.5 ms
+[apache-nocache-shop] median=707.4 ms  p95=719.0 ms  min=687.2  max=721.1  (n=15)

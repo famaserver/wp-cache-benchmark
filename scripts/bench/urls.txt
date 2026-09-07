@@ -1,0 +1,7 @@
+/
+/shop/
+/product/sleek-wooden-coat/
+/product/small-paper-shirt/
+/product/small-steel-bag/
+/post-71/
+/post-108/

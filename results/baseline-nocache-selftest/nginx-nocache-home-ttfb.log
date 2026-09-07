@@ -1,0 +1,16 @@
+[nginx-nocache-home] run 1: 854.3 ms
+[nginx-nocache-home] run 2: 862.0 ms
+[nginx-nocache-home] run 3: 882.6 ms
+[nginx-nocache-home] run 4: 862.4 ms
+[nginx-nocache-home] run 5: 858.6 ms
+[nginx-nocache-home] run 6: 833.3 ms
+[nginx-nocache-home] run 7: 874.9 ms
+[nginx-nocache-home] run 8: 847.8 ms
+[nginx-nocache-home] run 9: 863.3 ms
+[nginx-nocache-home] run 10: 880.6 ms
+[nginx-nocache-home] run 11: 878.1 ms
+[nginx-nocache-home] run 12: 893.9 ms
+[nginx-nocache-home] run 13: 893.5 ms
+[nginx-nocache-home] run 14: 851.0 ms
+[nginx-nocache-home] run 15: 837.9 ms
+[nginx-nocache-home] median=862.4 ms  p95=893.5 ms  min=833.3  max=893.9  (n=15)

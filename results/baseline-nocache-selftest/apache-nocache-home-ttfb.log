@@ -1,0 +1,16 @@
+[apache-nocache-home] run 1: 838.3 ms
+[apache-nocache-home] run 2: 850.4 ms
+[apache-nocache-home] run 3: 864.9 ms
+[apache-nocache-home] run 4: 859.9 ms
+[apache-nocache-home] run 5: 852.8 ms
+[apache-nocache-home] run 6: 862.7 ms
+[apache-nocache-home] run 7: 865.8 ms
+[apache-nocache-home] run 8: 864.9 ms
+[apache-nocache-home] run 9: 874.3 ms
+[apache-nocache-home] run 10: 862.7 ms
+[apache-nocache-home] run 11: 831.6 ms
+[apache-nocache-home] run 12: 834.6 ms
+[apache-nocache-home] run 13: 856.5 ms
+[apache-nocache-home] run 14: 865.5 ms
+[apache-nocache-home] run 15: 821.9 ms
+[apache-nocache-home] median=859.9 ms  p95=865.8 ms  min=821.9  max=874.3  (n=15)

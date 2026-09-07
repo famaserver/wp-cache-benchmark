@@ -1,0 +1,16 @@
+[nginx-nocache-shop] run 1: 714.8 ms
+[nginx-nocache-shop] run 2: 710.6 ms
+[nginx-nocache-shop] run 3: 708.6 ms
+[nginx-nocache-shop] run 4: 695.3 ms
+[nginx-nocache-shop] run 5: 698.2 ms
+[nginx-nocache-shop] run 6: 732.6 ms
+[nginx-nocache-shop] run 7: 732.9 ms
+[nginx-nocache-shop] run 8: 690.6 ms
+[nginx-nocache-shop] run 9: 718.6 ms
+[nginx-nocache-shop] run 10: 698.4 ms
+[nginx-nocache-shop] run 11: 707.9 ms
+[nginx-nocache-shop] run 12: 706.8 ms
+[nginx-nocache-shop] run 13: 721.8 ms
+[nginx-nocache-shop] run 14: 713.9 ms
+[nginx-nocache-shop] run 15: 699.9 ms
+[nginx-nocache-shop] median=708.6 ms  p95=732.6 ms  min=690.6  max=732.9  (n=15)

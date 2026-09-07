@@ -1,0 +1,16 @@
+[ols-nocache-shop] run 1: 712.0 ms
+[ols-nocache-shop] run 2: 726.5 ms
+[ols-nocache-shop] run 3: 722.6 ms
+[ols-nocache-shop] run 4: 726.5 ms
+[ols-nocache-shop] run 5: 731.1 ms
+[ols-nocache-shop] run 6: 717.9 ms
+[ols-nocache-shop] run 7: 726.9 ms
+[ols-nocache-shop] run 8: 706.0 ms
+[ols-nocache-shop] run 9: 710.2 ms
+[ols-nocache-shop] run 10: 719.0 ms
+[ols-nocache-shop] run 11: 713.7 ms
+[ols-nocache-shop] run 12: 716.8 ms
+[ols-nocache-shop] run 13: 721.8 ms
+[ols-nocache-shop] run 14: 690.7 ms
+[ols-nocache-shop] run 15: 721.3 ms
+[ols-nocache-shop] median=719.0 ms  p95=726.9 ms  min=690.7  max=731.1  (n=15)

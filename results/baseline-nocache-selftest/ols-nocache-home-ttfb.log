@@ -1,0 +1,16 @@
+[ols-nocache-home] run 1: 852.9 ms
+[ols-nocache-home] run 2: 864.0 ms
+[ols-nocache-home] run 3: 831.7 ms
+[ols-nocache-home] run 4: 853.8 ms
+[ols-nocache-home] run 5: 839.2 ms
+[ols-nocache-home] run 6: 823.1 ms
+[ols-nocache-home] run 7: 841.5 ms
+[ols-nocache-home] run 8: 846.7 ms
+[ols-nocache-home] run 9: 854.0 ms
+[ols-nocache-home] run 10: 842.5 ms
+[ols-nocache-home] run 11: 841.4 ms
+[ols-nocache-home] run 12: 857.4 ms
+[ols-nocache-home] run 13: 824.2 ms
+[ols-nocache-home] run 14: 856.9 ms
+[ols-nocache-home] run 15: 837.1 ms
+[ols-nocache-home] median=842.5 ms  p95=857.4 ms  min=823.1  max=864.0  (n=15)
