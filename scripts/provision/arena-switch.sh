@@ -9,6 +9,9 @@ DOMAIN=bench.fama.co.ir
 systemctl stop nginx apache2 lshttpd 2>/dev/null || true
 sleep 1
 
+# anti-contamination: no server-level cache may survive an arena switch
+rm -rf /usr/local/lsws/cachedata/* 2>/dev/null || true
+
 case "$ARENA" in
   nginx)  systemctl restart php8.2-fpm; systemctl start nginx ;;
   apache) systemctl restart php8.2-fpm; systemctl start apache2 ;;

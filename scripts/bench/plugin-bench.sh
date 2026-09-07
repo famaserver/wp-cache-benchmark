@@ -21,10 +21,34 @@ purge() {
 
 warmup() { for i in 1 2 3; do while read -r p; do curl -so /dev/null "$BASE$p"; done < urls.txt; done; }
 
-# فقط پلاگین هدف فعال باشد
+# فقط پلاگین هدف فعال باشد + پاکسازی کامل بقایای پلاگین‌های قبلی
 for p in $ALL_CACHE; do $WP plugin deactivate "$p" 2>/dev/null || true; done
+rm -rf /var/www/bench/wp-content/cache/* 2>/dev/null || true
+rm -rf /usr/local/lsws/cachedata/* 2>/dev/null || true
 $WP plugin activate "$PLUGIN"
+# پلاگین‌های advanced-cache محور (راکت/توربو/سوپرکش) به WP_CACHE نیاز دارند؛
+# چرخه فعال/غیرفعال CLI گاهی آن را false می‌کند — تضمین کن true باشد و drop-in بازسازی شود
+$WP config set WP_CACHE true --raw 2>/dev/null || true
+$WP plugin deactivate "$PLUGIN" >/dev/null 2>&1; $WP plugin activate "$PLUGIN" >/dev/null 2>&1
+$WP config set WP_CACHE true --raw 2>/dev/null || true
+# CLI با root فایل می‌سازد؛ PHP با www-data می‌نویسد — مالکیت باید درست شود
+chown -R www-data:www-data /var/www/bench/wp-content
+# راکت: فایل کانفیگ دامنه بدون آن advanced-cache کار نمی‌کند
+if [ "$PLUGIN" = "wp-rocket" ]; then
+  sudo -u www-data wp eval 'if(function_exists("rocket_generate_config_file")) rocket_generate_config_file();' --path=/var/www/bench 2>/dev/null || true
+fi
+chown -R www-data:www-data /var/www/bench/wp-content
 $WP plugin list --format=csv --fields=name,status,version > "results/${LABEL}-plugins-state.csv"
+
+# --- VERIFICATION GATE: مدرک فعال بودن مکانیزم کش قبل از اندازه‌گیری ---
+{
+  echo "advanced-cache.php size: $(stat -c%s /var/www/bench/wp-content/advanced-cache.php 2>/dev/null || echo missing)"
+  grep -n "WP_CACHE" /var/www/bench/wp-config.php
+  curl -so /dev/null "https://bench.fama.co.ir/"   # prime
+  curl -s -o /dev/null -w "2nd-hit ttfb: %{time_starttransfer}s\n" "https://bench.fama.co.ir/"
+  curl -sI "https://bench.fama.co.ir/" | grep -iE "x-cache|x-litespeed|x-rocket|x-turbo|x-wp-|cache-control|age:" || echo "(no cache headers)"
+} > "results/${LABEL}-verification.txt" 2>&1
+cat "results/${LABEL}-verification.txt"
 
 PATHS=$(paste -sd, urls.txt)
 for arena in $ARENAS; do
