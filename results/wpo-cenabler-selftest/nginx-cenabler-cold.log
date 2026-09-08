@@ -1,0 +1,10 @@
+[nginx-cenabler-cold-r1] run 1: 1095.2 ms
+[nginx-cenabler-cold-r1] median=1095.2 ms  p95=1095.2 ms  min=1095.2  max=1095.2  (n=1)
+[nginx-cenabler-cold-r2] run 1: 1100.2 ms
+[nginx-cenabler-cold-r2] median=1100.2 ms  p95=1100.2 ms  min=1100.2  max=1100.2  (n=1)
+[nginx-cenabler-cold-r3] run 1: 1107.3 ms
+[nginx-cenabler-cold-r3] median=1107.3 ms  p95=1107.3 ms  min=1107.3  max=1107.3  (n=1)
+[nginx-cenabler-cold-r4] run 1: 1112.3 ms
+[nginx-cenabler-cold-r4] median=1112.3 ms  p95=1112.3 ms  min=1112.3  max=1112.3  (n=1)
+[nginx-cenabler-cold-r5] run 1: 1101.3 ms
+[nginx-cenabler-cold-r5] median=1101.3 ms  p95=1101.3 ms  min=1101.3  max=1101.3  (n=1)

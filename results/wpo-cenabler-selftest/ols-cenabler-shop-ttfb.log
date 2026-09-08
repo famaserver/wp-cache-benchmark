@@ -1,0 +1,16 @@
+[ols-cenabler-shop] run 1: 914.2 ms
+[ols-cenabler-shop] run 2: 907.7 ms
+[ols-cenabler-shop] run 3: 885.5 ms
+[ols-cenabler-shop] run 4: 866.6 ms
+[ols-cenabler-shop] run 5: 867.2 ms
+[ols-cenabler-shop] run 6: 869.9 ms
+[ols-cenabler-shop] run 7: 876.7 ms
+[ols-cenabler-shop] run 8: 918.9 ms
+[ols-cenabler-shop] run 9: 882.4 ms
+[ols-cenabler-shop] run 10: 915.9 ms
+[ols-cenabler-shop] run 11: 891.4 ms
+[ols-cenabler-shop] run 12: 872.0 ms
+[ols-cenabler-shop] run 13: 875.9 ms
+[ols-cenabler-shop] run 14: 888.7 ms
+[ols-cenabler-shop] run 15: 882.6 ms
+[ols-cenabler-shop] median=882.6 ms  p95=915.9 ms  min=866.6  max=918.9  (n=15)

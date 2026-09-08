@@ -1,0 +1,10 @@
+[nginx-wpo-cold-r1] run 1: 1115.2 ms
+[nginx-wpo-cold-r1] median=1115.2 ms  p95=1115.2 ms  min=1115.2  max=1115.2  (n=1)
+[nginx-wpo-cold-r2] run 1: 1123.5 ms
+[nginx-wpo-cold-r2] median=1123.5 ms  p95=1123.5 ms  min=1123.5  max=1123.5  (n=1)
+[nginx-wpo-cold-r3] run 1: 1125.6 ms
+[nginx-wpo-cold-r3] median=1125.6 ms  p95=1125.6 ms  min=1125.6  max=1125.6  (n=1)
+[nginx-wpo-cold-r4] run 1: 1129.5 ms
+[nginx-wpo-cold-r4] median=1129.5 ms  p95=1129.5 ms  min=1129.5  max=1129.5  (n=1)
+[nginx-wpo-cold-r5] run 1: 1120.0 ms
+[nginx-wpo-cold-r5] median=1120.0 ms  p95=1120.0 ms  min=1120.0  max=1120.0  (n=1)

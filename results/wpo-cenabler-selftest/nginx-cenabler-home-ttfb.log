@@ -1,0 +1,16 @@
+[nginx-cenabler-home] run 1: 1085.0 ms
+[nginx-cenabler-home] run 2: 1025.8 ms
+[nginx-cenabler-home] run 3: 1034.3 ms
+[nginx-cenabler-home] run 4: 1081.5 ms
+[nginx-cenabler-home] run 5: 1029.3 ms
+[nginx-cenabler-home] run 6: 1037.8 ms
+[nginx-cenabler-home] run 7: 1064.4 ms
+[nginx-cenabler-home] run 8: 1078.9 ms
+[nginx-cenabler-home] run 9: 1035.9 ms
+[nginx-cenabler-home] run 10: 1026.0 ms
+[nginx-cenabler-home] run 11: 1057.6 ms
+[nginx-cenabler-home] run 12: 1041.4 ms
+[nginx-cenabler-home] run 13: 1021.8 ms
+[nginx-cenabler-home] run 14: 1020.4 ms
+[nginx-cenabler-home] run 15: 1019.4 ms
+[nginx-cenabler-home] median=1035.9 ms  p95=1081.5 ms  min=1019.4  max=1085.0  (n=15)

@@ -1,0 +1,16 @@
+[apache-wpo-home] run 1: 1061.1 ms
+[apache-wpo-home] run 2: 1040.7 ms
+[apache-wpo-home] run 3: 1059.7 ms
+[apache-wpo-home] run 4: 1109.9 ms
+[apache-wpo-home] run 5: 1050.1 ms
+[apache-wpo-home] run 6: 1032.4 ms
+[apache-wpo-home] run 7: 1070.9 ms
+[apache-wpo-home] run 8: 1053.6 ms
+[apache-wpo-home] run 9: 1048.2 ms
+[apache-wpo-home] run 10: 1062.3 ms
+[apache-wpo-home] run 11: 1060.6 ms
+[apache-wpo-home] run 12: 1077.8 ms
+[apache-wpo-home] run 13: 1066.8 ms
+[apache-wpo-home] run 14: 1051.9 ms
+[apache-wpo-home] run 15: 1041.7 ms
+[apache-wpo-home] median=1059.7 ms  p95=1077.8 ms  min=1032.4  max=1109.9  (n=15)

@@ -1,0 +1,16 @@
+[nginx-wpo-shop] run 1: 889.8 ms
+[nginx-wpo-shop] run 2: 908.8 ms
+[nginx-wpo-shop] run 3: 912.8 ms
+[nginx-wpo-shop] run 4: 897.6 ms
+[nginx-wpo-shop] run 5: 935.4 ms
+[nginx-wpo-shop] run 6: 901.0 ms
+[nginx-wpo-shop] run 7: 886.1 ms
+[nginx-wpo-shop] run 8: 904.3 ms
+[nginx-wpo-shop] run 9: 896.3 ms
+[nginx-wpo-shop] run 10: 955.6 ms
+[nginx-wpo-shop] run 11: 874.6 ms
+[nginx-wpo-shop] run 12: 917.4 ms
+[nginx-wpo-shop] run 13: 919.0 ms
+[nginx-wpo-shop] run 14: 894.0 ms
+[nginx-wpo-shop] run 15: 898.8 ms
+[nginx-wpo-shop] median=901.0 ms  p95=935.4 ms  min=874.6  max=955.6  (n=15)

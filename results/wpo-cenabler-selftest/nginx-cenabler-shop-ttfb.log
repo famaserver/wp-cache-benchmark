@@ -1,0 +1,16 @@
+[nginx-cenabler-shop] run 1: 897.8 ms
+[nginx-cenabler-shop] run 2: 905.0 ms
+[nginx-cenabler-shop] run 3: 934.9 ms
+[nginx-cenabler-shop] run 4: 5915.0 ms
+[nginx-cenabler-shop] run 5: 895.7 ms
+[nginx-cenabler-shop] run 6: 907.9 ms
+[nginx-cenabler-shop] run 7: 878.8 ms
+[nginx-cenabler-shop] run 8: 896.5 ms
+[nginx-cenabler-shop] run 9: 899.4 ms
+[nginx-cenabler-shop] run 10: 868.9 ms
+[nginx-cenabler-shop] run 11: 895.6 ms
+[nginx-cenabler-shop] run 12: 883.2 ms
+[nginx-cenabler-shop] run 13: 904.8 ms
+[nginx-cenabler-shop] run 14: 903.8 ms
+[nginx-cenabler-shop] run 15: 909.5 ms
+[nginx-cenabler-shop] median=899.4 ms  p95=934.9 ms  min=868.9  max=5915.0  (n=15)

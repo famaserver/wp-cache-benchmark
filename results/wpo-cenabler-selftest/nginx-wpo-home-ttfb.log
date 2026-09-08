@@ -1,0 +1,16 @@
+[nginx-wpo-home] run 1: 1073.0 ms
+[nginx-wpo-home] run 2: 1066.2 ms
+[nginx-wpo-home] run 3: 1056.1 ms
+[nginx-wpo-home] run 4: 1065.2 ms
+[nginx-wpo-home] run 5: 1082.8 ms
+[nginx-wpo-home] run 6: 1080.4 ms
+[nginx-wpo-home] run 7: 1049.6 ms
+[nginx-wpo-home] run 8: 1055.3 ms
+[nginx-wpo-home] run 9: 1067.0 ms
+[nginx-wpo-home] run 10: 1055.9 ms
+[nginx-wpo-home] run 11: 1070.3 ms
+[nginx-wpo-home] run 12: 1062.9 ms
+[nginx-wpo-home] run 13: 1063.0 ms
+[nginx-wpo-home] run 14: 1059.8 ms
+[nginx-wpo-home] run 15: 1063.8 ms
+[nginx-wpo-home] median=1063.8 ms  p95=1080.4 ms  min=1049.6  max=1082.8  (n=15)

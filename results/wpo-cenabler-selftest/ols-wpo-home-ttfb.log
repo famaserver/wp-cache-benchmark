@@ -1,0 +1,16 @@
+[ols-wpo-home] run 1: 1038.6 ms
+[ols-wpo-home] run 2: 1070.1 ms
+[ols-wpo-home] run 3: 1063.1 ms
+[ols-wpo-home] run 4: 1037.2 ms
+[ols-wpo-home] run 5: 1049.0 ms
+[ols-wpo-home] run 6: 1045.2 ms
+[ols-wpo-home] run 7: 1066.9 ms
+[ols-wpo-home] run 8: 1081.4 ms
+[ols-wpo-home] run 9: 1059.3 ms
+[ols-wpo-home] run 10: 1042.6 ms
+[ols-wpo-home] run 11: 1053.3 ms
+[ols-wpo-home] run 12: 1068.0 ms
+[ols-wpo-home] run 13: 1034.8 ms
+[ols-wpo-home] run 14: 1052.5 ms
+[ols-wpo-home] run 15: 1036.8 ms
+[ols-wpo-home] median=1052.5 ms  p95=1070.1 ms  min=1034.8  max=1081.4  (n=15)

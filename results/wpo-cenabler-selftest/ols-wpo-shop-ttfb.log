@@ -1,0 +1,16 @@
+[ols-wpo-shop] run 1: 885.1 ms
+[ols-wpo-shop] run 2: 872.7 ms
+[ols-wpo-shop] run 3: 897.5 ms
+[ols-wpo-shop] run 4: 887.6 ms
+[ols-wpo-shop] run 5: 895.7 ms
+[ols-wpo-shop] run 6: 902.1 ms
+[ols-wpo-shop] run 7: 888.9 ms
+[ols-wpo-shop] run 8: 875.5 ms
+[ols-wpo-shop] run 9: 922.8 ms
+[ols-wpo-shop] run 10: 907.5 ms
+[ols-wpo-shop] run 11: 893.4 ms
+[ols-wpo-shop] run 12: 908.7 ms
+[ols-wpo-shop] run 13: 905.2 ms
+[ols-wpo-shop] run 14: 902.5 ms
+[ols-wpo-shop] run 15: 912.6 ms
+[ols-wpo-shop] median=897.5 ms  p95=912.6 ms  min=872.7  max=922.8  (n=15)

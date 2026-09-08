@@ -1,0 +1,16 @@
+[apache-cenabler-shop] run 1: 872.2 ms
+[apache-cenabler-shop] run 2: 871.6 ms
+[apache-cenabler-shop] run 3: 5916.8 ms
+[apache-cenabler-shop] run 4: 919.2 ms
+[apache-cenabler-shop] run 5: 897.9 ms
+[apache-cenabler-shop] run 6: 867.9 ms
+[apache-cenabler-shop] run 7: 868.4 ms
+[apache-cenabler-shop] run 8: 869.3 ms
+[apache-cenabler-shop] run 9: 875.0 ms
+[apache-cenabler-shop] run 10: 909.5 ms
+[apache-cenabler-shop] run 11: 896.6 ms
+[apache-cenabler-shop] run 12: 910.3 ms
+[apache-cenabler-shop] run 13: 886.2 ms
+[apache-cenabler-shop] run 14: 885.8 ms
+[apache-cenabler-shop] run 15: 5888.2 ms
+[apache-cenabler-shop] median=886.2 ms  p95=5888.2 ms  min=867.9  max=5916.8  (n=15)

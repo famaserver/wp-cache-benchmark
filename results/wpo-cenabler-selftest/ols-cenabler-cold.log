@@ -1,0 +1,10 @@
+[ols-cenabler-cold-r1] run 1: 1043.3 ms
+[ols-cenabler-cold-r1] median=1043.3 ms  p95=1043.3 ms  min=1043.3  max=1043.3  (n=1)
+[ols-cenabler-cold-r2] run 1: 1038.9 ms
+[ols-cenabler-cold-r2] median=1038.9 ms  p95=1038.9 ms  min=1038.9  max=1038.9  (n=1)
+[ols-cenabler-cold-r3] run 1: 1025.8 ms
+[ols-cenabler-cold-r3] median=1025.8 ms  p95=1025.8 ms  min=1025.8  max=1025.8  (n=1)
+[ols-cenabler-cold-r4] run 1: 1039.8 ms
+[ols-cenabler-cold-r4] median=1039.8 ms  p95=1039.8 ms  min=1039.8  max=1039.8  (n=1)
+[ols-cenabler-cold-r5] run 1: 1049.5 ms
+[ols-cenabler-cold-r5] median=1049.5 ms  p95=1049.5 ms  min=1049.5  max=1049.5  (n=1)

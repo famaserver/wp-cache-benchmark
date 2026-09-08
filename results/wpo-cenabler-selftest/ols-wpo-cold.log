@@ -1,0 +1,10 @@
+[ols-wpo-cold-r1] run 1: 1051.4 ms
+[ols-wpo-cold-r1] median=1051.4 ms  p95=1051.4 ms  min=1051.4  max=1051.4  (n=1)
+[ols-wpo-cold-r2] run 1: 1056.1 ms
+[ols-wpo-cold-r2] median=1056.1 ms  p95=1056.1 ms  min=1056.1  max=1056.1  (n=1)
+[ols-wpo-cold-r3] run 1: 1043.5 ms
+[ols-wpo-cold-r3] median=1043.5 ms  p95=1043.5 ms  min=1043.5  max=1043.5  (n=1)
+[ols-wpo-cold-r4] run 1: 1051.4 ms
+[ols-wpo-cold-r4] median=1051.4 ms  p95=1051.4 ms  min=1051.4  max=1051.4  (n=1)
+[ols-wpo-cold-r5] run 1: 1062.2 ms
+[ols-wpo-cold-r5] median=1062.2 ms  p95=1062.2 ms  min=1062.2  max=1062.2  (n=1)

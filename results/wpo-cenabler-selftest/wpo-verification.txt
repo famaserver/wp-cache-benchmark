@@ -1,0 +1,4 @@
+advanced-cache.php size: missing
+72:define( 'WP_CACHE', true );
+2nd-hit ttfb: 1.120480s
+(no cache headers)

@@ -1,0 +1,16 @@
+[apache-wpo-shop] run 1: 883.9 ms
+[apache-wpo-shop] run 2: 888.4 ms
+[apache-wpo-shop] run 3: 875.0 ms
+[apache-wpo-shop] run 4: 908.9 ms
+[apache-wpo-shop] run 5: 903.6 ms
+[apache-wpo-shop] run 6: 905.4 ms
+[apache-wpo-shop] run 7: 930.7 ms
+[apache-wpo-shop] run 8: 928.9 ms
+[apache-wpo-shop] run 9: 898.5 ms
+[apache-wpo-shop] run 10: 918.5 ms
+[apache-wpo-shop] run 11: 884.0 ms
+[apache-wpo-shop] run 12: 902.9 ms
+[apache-wpo-shop] run 13: 887.3 ms
+[apache-wpo-shop] run 14: 932.0 ms
+[apache-wpo-shop] run 15: 906.8 ms
+[apache-wpo-shop] median=903.6 ms  p95=930.7 ms  min=875.0  max=932.0  (n=15)
