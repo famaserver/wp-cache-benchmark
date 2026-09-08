@@ -19,7 +19,7 @@
   <rect x="230" y="120" width="468" height="14" rx="2" class="bse"/>
   <text x="706" y="132" class="val">850 ms</text>
 
-  <text x="20" y="176" class="plug" fill="#a371f7">1. Turbo 3.2.4</text>
+  <text x="20" y="176" class="plug" fill="#a371f7">1. Turbo Cache 3.2.4</text>
   <text x="160" y="176" class="note">✅ under the Google line on every web server</text>
   <text x="105" y="198" class="srv">all servers</text> <rect x="230" y="188" width="89" height="14" rx="2" class="good"/><text x="327" y="200" class="val">161 ms ✅</text>
 

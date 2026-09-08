@@ -22,7 +22,7 @@
   <text x="208" y="105" class="val">7.3 RPS — the server on its own</text>
 
   <!-- TURBO -->
-  <text x="20" y="150" class="plug" fill="#a371f7">1. Turbo 3.2.4</text>
+  <text x="20" y="150" class="plug" fill="#a371f7">1. Turbo Cache 3.2.4</text>
   <text x="200" y="150" class="note">top tier on ALL three web servers 🏆 + native LiteSpeed integration</text>
   <text x="130" y="172" class="srv">Nginx</text>   <rect x="180" y="162" width="514" height="12" rx="2" class="ngx"/><text x="600" y="173" class="val" fill="#fff">192.7</text>
   <text x="122" y="192" class="srv">Apache</text>  <rect x="180" y="182" width="510" height="12" rx="2" class="apc"/><text x="600" y="193" class="val" fill="#fff">191.3</text>
