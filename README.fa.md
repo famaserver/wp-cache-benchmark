@@ -1,4 +1,4 @@
-<div dir="rtl">
+<div dir="rtl" align="right">
 
 # بنچمارک افزونه‌های کش وردپرس
 
@@ -7,7 +7,7 @@
 بنچمارک باز و قابل‌تکرار افزونه‌های کش وردپرس روی سه وب‌سرور Nginx، Apache و OpenLiteSpeed.
 تمامی اسکریپت‌ها، تنظیمات و داده‌های خام برای راستی‌آزمایی مستقل در همین مخزن منتشر شده است.
 
-<div dir="ltr">
+<div dir="ltr" align="left">
 
 ![Throughput](charts/rps-warm-50vu.svg)
 

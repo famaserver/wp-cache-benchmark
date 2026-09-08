@@ -1,4 +1,4 @@
-<div dir="rtl">
+<div dir="rtl" align="right">
 
 # اختبار أداء إضافات الكاش لووردبريس
 
@@ -7,7 +7,7 @@
 اختبار مفتوح وقابل لإعادة الإنتاج لإضافات الكاش في ووردبريس على ثلاثة خوادم ويب: Nginx وApache وOpenLiteSpeed.
 جميع السكربتات والإعدادات والبيانات الخام منشورة في هذا المستودع للتحقق المستقل.
 
-<div dir="ltr">
+<div dir="ltr" align="left">
 
 ![Throughput](charts/rps-warm-50vu.svg)
 
