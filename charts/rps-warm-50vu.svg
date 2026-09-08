@@ -1,60 +1,65 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 560" font-family="Segoe UI, Tahoma, Arial, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 760" font-family="Segoe UI, Tahoma, Arial, sans-serif">
   <style>
-    .lbl { font-size: 14px; fill: #888e99; }
-    .val { font-size: 14px; font-weight: 600; fill: #888e99; }
-    .hdr { font-size: 17px; font-weight: 700; fill: #7d8590; }
-    .sub { font-size: 12px; fill: #7d8590; }
-    .base { fill: #9aa2af; }
-    .lsc  { fill: #3fb950; }
-    .rkt  { fill: #e8833a; }
-    .trb  { fill: #a371f7; }
+    .plug { font-size: 16px; font-weight: 700; fill: #7d8590; }
+    .note { font-size: 12.5px; fill: #8b949e; }
+    .srv  { font-size: 12px; fill: #8b949e; }
+    .val  { font-size: 13px; font-weight: 700; fill: #8b949e; }
+    .hdr  { font-size: 18px; font-weight: 700; fill: #7d8590; }
+    .sub  { font-size: 12px; fill: #7d8590; }
+    .ngx { fill: #4f8ff7; } .apc { fill: #d0a215; } .ols { fill: #3fb950; } .bse { fill: #9aa2af; }
   </style>
-  <text x="20" y="30" class="hdr">Warm-cache throughput — 50 concurrent users (requests/second)</text>
-  <text x="20" y="50" class="sub">Test 1 · 2026-09-08 · self-test¹ · higher is better · median of 3 × 60 s runs</text>
+  <text x="20" y="30" class="hdr">Cache plugin power — requests/second, 50 concurrent users, warm cache</text>
+  <text x="20" y="50" class="sub">Test 1 · 2026-09-08 · higher = stronger · median of 3 × 60 s k6 runs · self-test</text>
 
-  <!-- Nginx -->
-  <text x="20" y="93" class="lbl">Nginx — no cache</text>
-  <rect x="255" y="80" width="20" height="16" rx="3" class="base"/>
-  <text x="283" y="93" class="val">7.4</text>
-  <text x="20" y="118" class="lbl">Nginx — LiteSpeed Cache</text>
-  <rect x="255" y="105" width="18" height="16" rx="3" class="lsc"/>
-  <text x="281" y="118" class="val">6.4 (page cache inert)</text>
-  <text x="20" y="143" class="lbl">Nginx — WP Rocket</text>
-  <rect x="255" y="130" width="527" height="16" rx="3" class="rkt"/>
-  <text x="530" y="143" class="val" fill="#fff">193.3</text>
-  <text x="20" y="168" class="lbl">Nginx — Turbo</text>
-  <rect x="255" y="155" width="34" height="16" rx="3" class="trb"/>
-  <text x="297" y="168" class="val">12.3</text>
+  <!-- legend -->
+  <rect x="580" y="20" width="12" height="12" rx="2" class="ngx"/><text x="597" y="31" class="srv">Nginx</text>
+  <rect x="655" y="20" width="12" height="12" rx="2" class="apc"/><text x="672" y="31" class="srv">Apache</text>
+  <rect x="740" y="20" width="12" height="12" rx="2" class="ols"/><text x="757" y="31" class="srv">OpenLiteSpeed</text>
 
-  <!-- Apache -->
-  <text x="20" y="213" class="lbl">Apache — no cache</text>
-  <rect x="255" y="200" width="20" height="16" rx="3" class="base"/>
-  <text x="283" y="213" class="val">7.3</text>
-  <text x="20" y="238" class="lbl">Apache — LiteSpeed Cache</text>
-  <rect x="255" y="225" width="18" height="16" rx="3" class="lsc"/>
-  <text x="281" y="238" class="val">6.4 (page cache inert)</text>
-  <text x="20" y="263" class="lbl">Apache — WP Rocket</text>
-  <rect x="255" y="250" width="521" height="16" rx="3" class="rkt"/>
-  <text x="530" y="263" class="val" fill="#fff">190.9</text>
-  <text x="20" y="288" class="lbl">Apache — Turbo</text>
-  <rect x="255" y="275" width="33" height="16" rx="3" class="trb"/>
-  <text x="296" y="288" class="val">12.2</text>
+  <!-- baseline reference -->
+  <text x="20" y="86" class="plug" fill="#9aa2af">No cache plugin (baseline)</text>
+  <rect x="180" y="94" width="20" height="12" rx="2" class="bse"/>
+  <text x="208" y="105" class="val">7.3 RPS — the server on its own</text>
 
-  <!-- OLS -->
-  <text x="20" y="333" class="lbl">OpenLiteSpeed — no cache</text>
-  <rect x="255" y="320" width="20" height="16" rx="3" class="base"/>
-  <text x="283" y="333" class="val">7.3</text>
-  <text x="20" y="358" class="lbl">OpenLiteSpeed — LiteSpeed Cache</text>
-  <rect x="255" y="345" width="532" height="16" rx="3" class="lsc"/>
-  <text x="530" y="358" class="val" fill="#fff">194.9</text>
-  <text x="20" y="383" class="lbl">OpenLiteSpeed — WP Rocket</text>
-  <rect x="255" y="370" width="526" height="16" rx="3" class="rkt"/>
-  <text x="530" y="383" class="val" fill="#fff">192.9</text>
-  <text x="20" y="408" class="lbl">OpenLiteSpeed — Turbo</text>
-  <rect x="255" y="395" width="529" height="16" rx="3" class="trb"/>
-  <text x="530" y="408" class="val" fill="#fff">193.9</text>
+  <!-- TURBO -->
+  <text x="20" y="150" class="plug" fill="#a371f7">1. Turbo 3.1.3</text>
+  <text x="200" y="150" class="note">fastest on the LiteSpeed stack 🏆 + real caching on every web server</text>
+  <text x="130" y="172" class="srv">Nginx</text>   <rect x="180" y="162" width="33" height="12" rx="2" class="ngx"/><text x="221" y="173" class="val">12.3</text>
+  <text x="122" y="192" class="srv">Apache</text>  <rect x="180" y="182" width="33" height="12" rx="2" class="apc"/><text x="221" y="193" class="val">12.2</text>
+  <text x="140" y="212" class="srv">OLS</text>     <rect x="180" y="202" width="517" height="12" rx="2" class="ols"/><text x="600" y="213" class="val" fill="#fff">193.9</text>
 
-  <text x="20" y="453" class="sub">W3TC / WP Super Cache / WP Fastest Cache out of the box: page cache never engages (~6.5 RPS = baseline); enabled-settings runs queued.</text>
-  <text x="20" y="470" class="sub">All ~191-195 RPS results are capped by the self-test setup (k6 shares the same 4 cores).</text>
-  <text x="20" y="487" class="sub">¹ load generator ran on the target server itself; external re-measurement pending.</text>
+  <!-- LSCACHE -->
+  <text x="20" y="256" class="plug">2. LiteSpeed Cache 7.9.1</text>
+  <text x="280" y="256" class="note">top speed — but ONLY on LiteSpeed servers; elsewhere slower than nothing</text>
+  <text x="130" y="278" class="srv">Nginx</text>   <rect x="180" y="268" width="17" height="12" rx="2" class="ngx"/><text x="205" y="279" class="val">6.4 ⚠️</text>
+  <text x="122" y="298" class="srv">Apache</text>  <rect x="180" y="288" width="17" height="12" rx="2" class="apc"/><text x="205" y="299" class="val">6.4 ⚠️</text>
+  <text x="140" y="318" class="srv">OLS</text>     <rect x="180" y="308" width="520" height="12" rx="2" class="ols"/><text x="600" y="319" class="val" fill="#fff">194.9</text>
+
+  <!-- ROCKET -->
+  <text x="20" y="362" class="plug">3. WP Rocket 3.18.3</text>
+  <text x="250" y="362" class="note">same strong result everywhere — but no LiteSpeed server integration</text>
+  <text x="130" y="384" class="srv">Nginx</text>   <rect x="180" y="374" width="516" height="12" rx="2" class="ngx"/><text x="600" y="385" class="val" fill="#fff">193.3</text>
+  <text x="122" y="404" class="srv">Apache</text>  <rect x="180" y="394" width="509" height="12" rx="2" class="apc"/><text x="600" y="405" class="val" fill="#fff">190.9</text>
+  <text x="140" y="424" class="srv">OLS</text>     <rect x="180" y="414" width="514" height="12" rx="2" class="ols"/><text x="600" y="425" class="val" fill="#fff">192.9</text>
+
+  <!-- W3TC -->
+  <text x="20" y="468" class="plug">4. W3 Total Cache 2.10.6</text>
+  <text x="290" y="468" class="note">page cache OFF by default — installing it changes nothing</text>
+  <text x="130" y="490" class="srv">Nginx</text>   <rect x="180" y="480" width="17" height="12" rx="2" class="ngx"/><text x="205" y="491" class="val">6.5</text>
+  <text x="122" y="510" class="srv">Apache</text>  <rect x="180" y="500" width="17" height="12" rx="2" class="apc"/><text x="205" y="511" class="val">6.5</text>
+  <text x="140" y="530" class="srv">OLS</text>     <rect x="180" y="520" width="17" height="12" rx="2" class="ols"/><text x="205" y="531" class="val">6.5</text>
+
+  <!-- WPSC -->
+  <text x="20" y="574" class="plug">5. WP Super Cache 3.1.3</text>
+  <text x="290" y="574" class="note">page cache OFF by default — installing it changes nothing</text>
+  <text x="130" y="596" class="srv">Nginx</text>   <rect x="180" y="586" width="17" height="12" rx="2" class="ngx"/><text x="205" y="597" class="val">6.5</text>
+  <text x="122" y="616" class="srv">Apache</text>  <rect x="180" y="606" width="17" height="12" rx="2" class="apc"/><text x="205" y="617" class="val">6.5</text>
+  <text x="140" y="636" class="srv">OLS</text>     <rect x="180" y="626" width="17" height="12" rx="2" class="ols"/><text x="205" y="637" class="val">6.5</text>
+
+  <!-- WFC -->
+  <text x="20" y="680" class="plug">6. WP Fastest Cache 1.5.1</text>
+  <text x="300" y="680" class="note">page cache OFF by default — installing it changes nothing</text>
+  <text x="130" y="702" class="srv">Nginx</text>   <rect x="180" y="692" width="17" height="12" rx="2" class="ngx"/><text x="205" y="703" class="val">6.5</text>
+  <text x="122" y="722" class="srv">Apache</text>  <rect x="180" y="712" width="17" height="12" rx="2" class="apc"/><text x="205" y="723" class="val">6.5</text>
+  <text x="140" y="742" class="srv">OLS</text>     <rect x="180" y="732" width="17" height="12" rx="2" class="ols"/><text x="205" y="743" class="val">6.5</text>
 </svg>

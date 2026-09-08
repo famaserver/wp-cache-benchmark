@@ -1,44 +1,41 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 400" font-family="Segoe UI, Tahoma, Arial, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 560" font-family="Segoe UI, Tahoma, Arial, sans-serif">
   <style>
-    .lbl { font-size: 14px; fill: #888e99; }
-    .val { font-size: 14px; font-weight: 600; fill: #888e99; }
-    .hdr { font-size: 17px; font-weight: 700; fill: #7d8590; }
-    .sub { font-size: 12px; fill: #7d8590; }
-    .base { fill: #9aa2af; }
-    .lsc  { fill: #3fb950; }
-    .rkt  { fill: #e8833a; }
-    .trb  { fill: #a371f7; }
+    .plug { font-size: 16px; font-weight: 700; fill: #7d8590; }
+    .note { font-size: 12.5px; fill: #8b949e; }
+    .srv  { font-size: 12px; fill: #8b949e; }
+    .val  { font-size: 13px; font-weight: 700; fill: #8b949e; }
+    .hdr  { font-size: 18px; font-weight: 700; fill: #7d8590; }
+    .sub  { font-size: 12px; fill: #7d8590; }
+    .good { fill: #3fb950; } .mid { fill: #d0a215; } .bad { fill: #f85149; } .bse { fill: #9aa2af; }
   </style>
-  <text x="20" y="30" class="hdr">Warm-cache TTFB — single visitor, homepage (milliseconds)</text>
-  <text x="20" y="50" class="sub">Test 1 · 2026-09-08 · lower is better · median of 15 requests · best arena per plugin</text>
+  <text x="20" y="30" class="hdr">Response speed (TTFB) — single visitor, homepage, warm cache</text>
+  <text x="20" y="50" class="sub">Test 1 · 2026-09-08 · LOWER = FASTER · median of 15 requests · Google recommends &lt; 200 ms</text>
 
-  <text x="20" y="98" class="lbl">No cache (baseline)</text>
-  <rect x="255" y="85" width="510" height="18" rx="3" class="base"/>
-  <text x="530" y="99" class="val" fill="#fff">850 ms</text>
+  <!-- google line at 200ms: scale 0.55px/ms => 200ms = 110px from x0=230 -->
+  <line x1="340" y1="70" x2="340" y2="520" stroke="#d0a215" stroke-dasharray="4 4" stroke-width="1"/>
+  <text x="346" y="82" class="sub" fill="#d0a215">Google 200 ms</text>
 
-  <text x="20" y="133" class="lbl">Turbo — on OpenLiteSpeed</text>
-  <rect x="255" y="120" width="93" height="18" rx="3" class="trb"/>
-  <text x="356" y="134" class="val">154 ms</text>
+  <text x="20" y="112" class="plug" fill="#9aa2af">No cache (baseline)</text>
+  <rect x="230" y="120" width="468" height="14" rx="2" class="bse"/>
+  <text x="706" y="132" class="val">850 ms</text>
 
-  <text x="20" y="168" class="lbl">LiteSpeed Cache — on OpenLiteSpeed</text>
-  <rect x="255" y="155" width="92" height="18" rx="3" class="lsc"/>
-  <text x="355" y="169" class="val">153 ms</text>
+  <text x="20" y="176" class="plug" fill="#a371f7">1. Turbo</text>
+  <text x="130" y="176" class="note">✅ under the Google line on LiteSpeed</text>
+  <text x="150" y="198" class="srv">OLS</text>    <rect x="230" y="188" width="85" height="14" rx="2" class="good"/><text x="323" y="200" class="val">154 ms ✅</text>
+  <text x="90" y="218" class="srv">Nginx/Apache</text> <rect x="230" y="208" width="264" height="14" rx="2" class="mid"/><text x="502" y="220" class="val">480 ms</text>
 
-  <text x="20" y="203" class="lbl">WP Rocket — any web server</text>
-  <rect x="255" y="190" width="93" height="18" rx="3" class="rkt"/>
-  <text x="356" y="204" class="val">155 ms</text>
+  <text x="20" y="262" class="plug">2. LiteSpeed Cache</text>
+  <text x="200" y="262" class="note">fast only at home — worse than baseline elsewhere</text>
+  <text x="150" y="284" class="srv">OLS</text>    <rect x="230" y="274" width="84" height="14" rx="2" class="good"/><text x="322" y="286" class="val">153 ms ✅</text>
+  <text x="90" y="304" class="srv">Nginx/Apache</text> <rect x="230" y="294" width="505" height="14" rx="2" class="bad"/><text x="600" y="306" class="val" fill="#fff">918 ms — slower than no cache!</text>
 
-  <text x="20" y="238" class="lbl">Turbo — on Nginx / Apache</text>
-  <rect x="255" y="225" width="288" height="18" rx="3" class="trb"/>
-  <text x="551" y="239" class="val">480 ms</text>
+  <text x="20" y="348" class="plug">3. WP Rocket</text>
+  <text x="160" y="348" class="note">consistent everywhere</text>
+  <text x="105" y="370" class="srv">all servers</text> <rect x="230" y="360" width="85" height="14" rx="2" class="good"/><text x="323" y="372" class="val">155 ms ✅</text>
 
-  <text x="20" y="273" class="lbl">LiteSpeed Cache — on Nginx / Apache</text>
-  <rect x="255" y="260" width="551" height="18" rx="3" class="lsc"/>
-  <text x="560" y="274" class="val" fill="#fff">918 ms (slower than no cache)</text>
+  <text x="20" y="416" class="plug">4-6. W3TC · WP Super Cache · WP Fastest Cache</text>
+  <text x="105" y="438" class="srv">all servers</text> <rect x="230" y="428" width="473" height="14" rx="2" class="bse"/><text x="600" y="440" class="val" fill="#fff">~860 ms — cache never engages</text>
 
-  <text x="20" y="308" class="lbl">W3TC / WP Super Cache / WP Fastest Cache (as installed)</text>
-  <rect x="255" y="295" width="516" height="18" rx="3" class="base"/>
-  <text x="530" y="309" class="val" fill="#fff">~860 ms (cache never engages)</text>
-
-  <text x="20" y="355" class="sub">The residual ~150 ms on cached hits is the probe's TLS handshake; server-side serve time is sub-millisecond.</text>
+  <text x="20" y="500" class="sub">Cached hits are served in under 1 ms by the server; the ~150 ms shown is the connection's TLS handshake.</text>
+  <text x="20" y="518" class="sub">TTFB under 200 ms improves crawl budget and Core Web Vitals — direct SEO impact.</text>
 </svg>
