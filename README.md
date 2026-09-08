@@ -2,9 +2,8 @@
 
 **🇬🇧 English** · [🇮🇷 فارسی](README.fa.md) · [🇸🇦 العربية](README.ar.md)
 
-Open, reproducible benchmark of the 6 major WordPress cache plugins on 3 web servers.
-Every script and every raw number is in this repo — doubt a number, re-run it.
-Test server by [FamaServer](https://famaserver.com).
+An open, reproducible benchmark of WordPress cache plugins on three web servers: Nginx, Apache, and OpenLiteSpeed.
+Every script, configuration, and raw data point is published in this repository for independent verification.
 
 ![Throughput](charts/rps-warm-50vu.svg)
 
@@ -12,29 +11,32 @@ Test server by [FamaServer](https://famaserver.com).
 
 ## Test 1 — 2026-09-08
 
-**Environment:** FamaServer VPS · 4 vCPU Xeon Gold 6138 · 8 GB RAM · 40 GB NVMe (fio-verified: 87.9k IOPS) · Ubuntu 24.04 · PHP 8.2 FPM (12 workers, identical on every stack) · MariaDB 10.11 · Redis 7 · HTTPS/HTTP-2 · WordPress 7.1 + WooCommerce 9.9.5 + Woodmart 8.2.6 + Elementor — **830 products, 109 posts, 234 orders**. Load: k6, 50 concurrent users × 60 s × 3 runs, medians reported. [Full methodology →](results/)
+**Environment:** dedicated VPS (provided by FamaServer) · 4 vCPU Intel Xeon Gold 6138 · 8 GB RAM · 40 GB NVMe (fio-verified: 87.9k IOPS) · Ubuntu 24.04 LTS · PHP 8.2 FPM (12 workers, identical on every stack) · MariaDB 10.11 · Redis · HTTPS/HTTP-2 · WordPress 7.1 + WooCommerce 9.9.5 + Woodmart 8.2.6 + Elementor — **830 products, 109 posts, 234 orders**. Load: k6, 50 concurrent users × 60 s × 3 runs, medians reported. [Full methodology →](results/)
 
-**Plugins under test:**
+### Plugins under test
 
-| # | Plugin | Version | # | Plugin | Version |
-|---|---|---|---|---|---|
-| 1 | **Turbo** | 3.1.3 | 4 | W3 Total Cache | 2.10.6 |
-| 2 | LiteSpeed Cache | 7.9.1 | 5 | WP Super Cache | 3.1.3 |
-| 3 | WP Rocket | 3.18.3 | 6 | WP Fastest Cache | 1.5.1 |
+| # | Plugin | Version | Type |
+|---|---|---|---|
+| 1 | Turbo | 3.1.3 | commercial |
+| 2 | LiteSpeed Cache | 7.9.1 | free |
+| 3 | WP Rocket | 3.18.3 | commercial |
+| 4 | W3 Total Cache | 2.10.6 | free |
+| 5 | WP Super Cache | 3.1.3 | free |
+| 6 | WP Fastest Cache | 1.5.1 | free |
 
 ### Results — requests/second at 50 concurrent users (warm cache)
 
-| Plugin | Nginx | Apache | OpenLiteSpeed | Caches everywhere? |
+| Plugin | Nginx | Apache | OpenLiteSpeed | Caches on every server |
 |---|---|---|---|---|
 | **Turbo** | 12.3 | 12.2 | **193.9** 🏆 | ✅ |
-| LiteSpeed Cache | 6.4 ⚠️ | 6.4 ⚠️ | 194.9 | ❌ LiteSpeed-only |
+| LiteSpeed Cache | 6.4 ⚠️ | 6.4 ⚠️ | 194.9 | ✖ |
 | WP Rocket | 193.3 | 190.9 | 192.9 | ✅ |
-| W3 Total Cache | 6.5 | 6.5 | 6.5 | ❌ off by default |
-| WP Super Cache | 6.5 | 6.5 | 6.5 | ❌ off by default |
-| WP Fastest Cache | 6.5 | 6.5 | 6.5 | ❌ off by default |
+| W3 Total Cache | 6.5 | 6.5 | 6.5 | ✖ |
+| WP Super Cache | 6.5 | 6.5 | 6.5 | ✖ |
+| WP Fastest Cache | 6.5 | 6.5 | 6.5 | ✖ |
 | *(no cache)* | *7.4* | *7.3* | *7.3* | — |
 
-⚠️ = slower than running no cache plugin at all.
+⚠️ slower than running no cache plugin at all. The 6.5 figures for rows 4–6 mean their page cache does not engage until manually configured.
 
 ### What Test 1 proves
 
