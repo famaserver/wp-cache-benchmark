@@ -1,0 +1,16 @@
+[nginx-rocket-shop] run 1: 154.5 ms
+[nginx-rocket-shop] run 2: 155.3 ms
+[nginx-rocket-shop] run 3: 155.0 ms
+[nginx-rocket-shop] run 4: 155.1 ms
+[nginx-rocket-shop] run 5: 152.8 ms
+[nginx-rocket-shop] run 6: 156.7 ms
+[nginx-rocket-shop] run 7: 153.2 ms
+[nginx-rocket-shop] run 8: 157.2 ms
+[nginx-rocket-shop] run 9: 153.4 ms
+[nginx-rocket-shop] run 10: 153.9 ms
+[nginx-rocket-shop] run 11: 153.7 ms
+[nginx-rocket-shop] run 12: 153.7 ms
+[nginx-rocket-shop] run 13: 155.3 ms
+[nginx-rocket-shop] run 14: 156.4 ms
+[nginx-rocket-shop] run 15: 157.6 ms
+[nginx-rocket-shop] median=155.0 ms  p95=157.2 ms  min=152.8  max=157.6  (n=15)

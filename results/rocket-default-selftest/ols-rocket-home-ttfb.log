@@ -1,0 +1,16 @@
+[ols-rocket-home] run 1: 153.7 ms
+[ols-rocket-home] run 2: 154.3 ms
+[ols-rocket-home] run 3: 153.6 ms
+[ols-rocket-home] run 4: 154.2 ms
+[ols-rocket-home] run 5: 154.2 ms
+[ols-rocket-home] run 6: 158.9 ms
+[ols-rocket-home] run 7: 155.6 ms
+[ols-rocket-home] run 8: 156.9 ms
+[ols-rocket-home] run 9: 154.7 ms
+[ols-rocket-home] run 10: 154.2 ms
+[ols-rocket-home] run 11: 156.9 ms
+[ols-rocket-home] run 12: 159.4 ms
+[ols-rocket-home] run 13: 156.7 ms
+[ols-rocket-home] run 14: 157.0 ms
+[ols-rocket-home] run 15: 157.7 ms
+[ols-rocket-home] median=155.6 ms  p95=158.9 ms  min=153.6  max=159.4  (n=15)

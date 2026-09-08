@@ -1,0 +1,16 @@
+[apache-rocket-shop] run 1: 148.1 ms
+[apache-rocket-shop] run 2: 155.1 ms
+[apache-rocket-shop] run 3: 164.9 ms
+[apache-rocket-shop] run 4: 172.3 ms
+[apache-rocket-shop] run 5: 153.9 ms
+[apache-rocket-shop] run 6: 156.7 ms
+[apache-rocket-shop] run 7: 154.7 ms
+[apache-rocket-shop] run 8: 153.4 ms
+[apache-rocket-shop] run 9: 158.1 ms
+[apache-rocket-shop] run 10: 155.7 ms
+[apache-rocket-shop] run 11: 155.3 ms
+[apache-rocket-shop] run 12: 158.5 ms
+[apache-rocket-shop] run 13: 154.7 ms
+[apache-rocket-shop] run 14: 155.1 ms
+[apache-rocket-shop] run 15: 155.5 ms
+[apache-rocket-shop] median=155.3 ms  p95=164.9 ms  min=148.1  max=172.3  (n=15)

@@ -1,0 +1,16 @@
+[apache-rocket-home] run 1: 156.1 ms
+[apache-rocket-home] run 2: 157.9 ms
+[apache-rocket-home] run 3: 159.5 ms
+[apache-rocket-home] run 4: 154.6 ms
+[apache-rocket-home] run 5: 159.2 ms
+[apache-rocket-home] run 6: 156.8 ms
+[apache-rocket-home] run 7: 162.4 ms
+[apache-rocket-home] run 8: 156.7 ms
+[apache-rocket-home] run 9: 160.1 ms
+[apache-rocket-home] run 10: 154.1 ms
+[apache-rocket-home] run 11: 154.1 ms
+[apache-rocket-home] run 12: 157.8 ms
+[apache-rocket-home] run 13: 160.7 ms
+[apache-rocket-home] run 14: 157.2 ms
+[apache-rocket-home] run 15: 159.3 ms
+[apache-rocket-home] median=157.8 ms  p95=160.7 ms  min=154.1  max=162.4  (n=15)

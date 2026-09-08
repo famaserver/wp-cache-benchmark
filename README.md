@@ -8,7 +8,7 @@ Every script, every configuration, and every raw result file lives in this repos
 
 ![Warm-cache throughput, 50 concurrent users](charts/rps-warm-50vu.svg)
 
-**Status: 🚧 Round 1 in progress** — baseline ✅ · LiteSpeed Cache ✅ · Turbo, WP Rocket, W3TC, WP Super Cache, WP Fastest Cache: queued.
+**Status: 🚧 Round 1 in progress** — baseline ✅ · LiteSpeed Cache ✅ · WP Rocket ✅ · Turbo, W3TC, WP Super Cache, WP Fastest Cache: queued.
 
 ## Benchmark versioning
 
@@ -91,6 +91,16 @@ Without a cache the bottleneck is PHP/CPU — the web server choice changes noth
 | Apache | 6.4 | 7 359 ms | ×0.87 — *slower than no plugin* |
 
 On its own server LSCache is transformative; on Nginx/Apache its page cache is inert and the plugin becomes pure overhead. Details: [`results/LSCACHE-default-selftest.md`](results/LSCACHE-default-selftest.md)
+
+### WP Rocket 3.18.3 — default settings (self-test¹, 50 VUs, warm)
+
+| Web server | RPS | TTFB p50 | vs baseline |
+|---|---|---|---|
+| Nginx | **193.3** | 1.8 ms | ×26.1 |
+| OpenLiteSpeed | **192.9** | 2.1 ms | ×26.4 |
+| Apache | **190.9** | 2.3 ms | ×26.2 |
+
+Web-server-independent: statistically identical on all three arenas. Its first run was discarded by our own verification gate (stale-cache contamination + cache silently off) — full story in [`results/ROCKET-default-selftest.md`](results/ROCKET-default-selftest.md).
 
 > ¹ *self-test* = the load generator (k6) ran on the target server itself. All headline numbers will be re-measured from a separate same-datacenter box and labeled accordingly.
 

@@ -1,0 +1,10 @@
+[apache-rocket-cold-r1] run 1: 1055.1 ms
+[apache-rocket-cold-r1] median=1055.1 ms  p95=1055.1 ms  min=1055.1  max=1055.1  (n=1)
+[apache-rocket-cold-r2] run 1: 1069.4 ms
+[apache-rocket-cold-r2] median=1069.4 ms  p95=1069.4 ms  min=1069.4  max=1069.4  (n=1)
+[apache-rocket-cold-r3] run 1: 1061.8 ms
+[apache-rocket-cold-r3] median=1061.8 ms  p95=1061.8 ms  min=1061.8  max=1061.8  (n=1)
+[apache-rocket-cold-r4] run 1: 988.8 ms
+[apache-rocket-cold-r4] median=988.8 ms  p95=988.8 ms  min=988.8  max=988.8  (n=1)
+[apache-rocket-cold-r5] run 1: 1041.9 ms
+[apache-rocket-cold-r5] median=1041.9 ms  p95=1041.9 ms  min=1041.9  max=1041.9  (n=1)

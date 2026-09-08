@@ -1,0 +1,4 @@
+advanced-cache.php size: 3402
+2:define( 'WP_CACHE', true ); // Added by WP Rocket
+2nd-hit ttfb: 0.155932s
+(no cache headers)

@@ -1,0 +1,16 @@
+[nginx-rocket-home] run 1: 171.7 ms
+[nginx-rocket-home] run 2: 154.5 ms
+[nginx-rocket-home] run 3: 154.7 ms
+[nginx-rocket-home] run 4: 170.4 ms
+[nginx-rocket-home] run 5: 154.4 ms
+[nginx-rocket-home] run 6: 172.0 ms
+[nginx-rocket-home] run 7: 155.0 ms
+[nginx-rocket-home] run 8: 154.7 ms
+[nginx-rocket-home] run 9: 154.0 ms
+[nginx-rocket-home] run 10: 156.5 ms
+[nginx-rocket-home] run 11: 158.4 ms
+[nginx-rocket-home] run 12: 154.7 ms
+[nginx-rocket-home] run 13: 155.8 ms
+[nginx-rocket-home] run 14: 154.2 ms
+[nginx-rocket-home] run 15: 153.0 ms
+[nginx-rocket-home] median=154.7 ms  p95=171.7 ms  min=153.0  max=172.0  (n=15)

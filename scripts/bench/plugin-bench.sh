@@ -13,10 +13,12 @@ mkdir -p results
 
 purge() {
   case "$PLUGIN" in
-    litespeed-cache) $WP litespeed-purge all 2>/dev/null || $WP cache flush 2>/dev/null || true ;;
-    wp-rocket)       $WP rocket clean --confirm 2>/dev/null || $WP cache flush 2>/dev/null || true ;;
-    *)               $WP cache flush 2>/dev/null || true ;;
+    litespeed-cache) $WP litespeed-purge all 2>/dev/null || true ;;
+    wp-rocket)       sudo -u www-data wp eval 'if(function_exists("rocket_clean_domain")) rocket_clean_domain();' --path=/var/www/bench 2>/dev/null || true ;;
   esac
+  # قطعیت purge: حذف فیزیکی فایل‌های کش صفحه + فلاش object cache
+  rm -rf /var/www/bench/wp-content/cache/*/* 2>/dev/null || true
+  $WP cache flush 2>/dev/null || true
 }
 
 warmup() { for i in 1 2 3; do while read -r p; do curl -so /dev/null "$BASE$p"; done < urls.txt; done; }

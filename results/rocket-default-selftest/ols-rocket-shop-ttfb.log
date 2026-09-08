@@ -1,0 +1,16 @@
+[ols-rocket-shop] run 1: 152.8 ms
+[ols-rocket-shop] run 2: 153.3 ms
+[ols-rocket-shop] run 3: 155.3 ms
+[ols-rocket-shop] run 4: 153.2 ms
+[ols-rocket-shop] run 5: 153.0 ms
+[ols-rocket-shop] run 6: 153.8 ms
+[ols-rocket-shop] run 7: 154.4 ms
+[ols-rocket-shop] run 8: 155.8 ms
+[ols-rocket-shop] run 9: 154.9 ms
+[ols-rocket-shop] run 10: 153.1 ms
+[ols-rocket-shop] run 11: 160.6 ms
+[ols-rocket-shop] run 12: 153.3 ms
+[ols-rocket-shop] run 13: 153.6 ms
+[ols-rocket-shop] run 14: 153.5 ms
+[ols-rocket-shop] run 15: 153.1 ms
+[ols-rocket-shop] median=153.5 ms  p95=155.8 ms  min=152.8  max=160.6  (n=15)

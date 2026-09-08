@@ -1,0 +1,10 @@
+[nginx-rocket-cold-r1] run 1: 2597.6 ms
+[nginx-rocket-cold-r1] median=2597.6 ms  p95=2597.6 ms  min=2597.6  max=2597.6  (n=1)
+[nginx-rocket-cold-r2] run 1: 1057.1 ms
+[nginx-rocket-cold-r2] median=1057.1 ms  p95=1057.1 ms  min=1057.1  max=1057.1  (n=1)
+[nginx-rocket-cold-r3] run 1: 1064.0 ms
+[nginx-rocket-cold-r3] median=1064.0 ms  p95=1064.0 ms  min=1064.0  max=1064.0  (n=1)
+[nginx-rocket-cold-r4] run 1: 1061.6 ms
+[nginx-rocket-cold-r4] median=1061.6 ms  p95=1061.6 ms  min=1061.6  max=1061.6  (n=1)
+[nginx-rocket-cold-r5] run 1: 1045.0 ms
+[nginx-rocket-cold-r5] median=1045.0 ms  p95=1045.0 ms  min=1045.0  max=1045.0  (n=1)
