@@ -1,0 +1,7 @@
+advanced-cache.php size: missing
+87:define( 'WP_CACHE', true );
+2nd-hit ttfb: 0.503731s
+cache-control: public, max-age=600, must-revalidate
+x-cache: HIT
+x-cache-provider: turbo
+x-turbo-cache: HIT

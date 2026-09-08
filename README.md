@@ -8,7 +8,7 @@ Every script, every configuration, and every raw result file lives in this repos
 
 ![Warm-cache throughput, 50 concurrent users](charts/rps-warm-50vu.svg)
 
-**Status: 🚧 Round 1 in progress** — baseline ✅ · LiteSpeed Cache ✅ · WP Rocket ✅ · Turbo, W3TC, WP Super Cache, WP Fastest Cache: queued.
+**Status: 🚧 Round 1 in progress** — baseline ✅ · LiteSpeed Cache ✅ · WP Rocket ✅ · Turbo ✅ · W3TC/WPSC/WFC out-of-box ✅ (enabled-settings runs queued) · external load-generator re-measurement pending.
 
 ## Benchmark versioning
 
@@ -101,6 +101,20 @@ On its own server LSCache is transformative; on Nginx/Apache its page cache is i
 | Apache | **190.9** | 2.3 ms | ×26.2 |
 
 Web-server-independent: statistically identical on all three arenas. Its first run was discarded by our own verification gate (stale-cache contamination + cache silently off) — full story in [`results/ROCKET-default-selftest.md`](results/ROCKET-default-selftest.md).
+
+### Turbo 3.1.3 — vendor-configured (self-test¹, 50 VUs, warm)
+
+| Web server | RPS | TTFB p50 | vs baseline |
+|---|---|---|---|
+| **OpenLiteSpeed** | **193.9** | **0.4 ms** | ×26.6 |
+| Nginx | 12.3 | 3 750 ms | ×1.7 |
+| Apache | 12.2 | 3 760 ms | ×1.7 |
+
+On OpenLiteSpeed Turbo matches LiteSpeed Cache via a native server-cache integration (verified miss→hit with its own `x-litespeed-tag: turbo_*` tags). On Nginx/Apache it caches (`x-turbo-cache: HIT`) but serves hits through the full WordPress bootstrap — no `advanced-cache.php` drop-in — capping throughput at ~12 RPS. Details: [`results/TURBO-configured-selftest.md`](results/TURBO-configured-selftest.md)
+
+### W3 Total Cache · WP Super Cache · WP Fastest Cache — out of the box
+
+All three sit at baseline (~6.5 RPS): **their page cache never engages until enabled in settings** (0-byte drop-in, ~1 s second hit). Unlike WP Rocket and LiteSpeed Cache, activating them does nothing by itself. Enabled-settings runs are queued. Details: [`results/FREE3-outofbox-selftest.md`](results/FREE3-outofbox-selftest.md)
 
 > ¹ *self-test* = the load generator (k6) ran on the target server itself. All headline numbers will be re-measured from a separate same-datacenter box and labeled accordingly.
 

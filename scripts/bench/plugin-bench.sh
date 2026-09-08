@@ -18,6 +18,7 @@ purge() {
   esac
   # قطعیت purge: حذف فیزیکی فایل‌های کش صفحه + فلاش object cache
   rm -rf /var/www/bench/wp-content/cache/*/* 2>/dev/null || true
+  rm -rf /var/www/bench/wp-content/turbo-page-cache/* 2>/dev/null || true
   $WP cache flush 2>/dev/null || true
 }
 

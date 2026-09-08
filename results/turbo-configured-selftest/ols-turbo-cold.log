@@ -1,0 +1,10 @@
+[ols-turbo-cold-r1] run 1: 1179.1 ms
+[ols-turbo-cold-r1] median=1179.1 ms  p95=1179.1 ms  min=1179.1  max=1179.1  (n=1)
+[ols-turbo-cold-r2] run 1: 1201.2 ms
+[ols-turbo-cold-r2] median=1201.2 ms  p95=1201.2 ms  min=1201.2  max=1201.2  (n=1)
+[ols-turbo-cold-r3] run 1: 1163.6 ms
+[ols-turbo-cold-r3] median=1163.6 ms  p95=1163.6 ms  min=1163.6  max=1163.6  (n=1)
+[ols-turbo-cold-r4] run 1: 1159.2 ms
+[ols-turbo-cold-r4] median=1159.2 ms  p95=1159.2 ms  min=1159.2  max=1159.2  (n=1)
+[ols-turbo-cold-r5] run 1: 1315.6 ms
+[ols-turbo-cold-r5] median=1315.6 ms  p95=1315.6 ms  min=1315.6  max=1315.6  (n=1)

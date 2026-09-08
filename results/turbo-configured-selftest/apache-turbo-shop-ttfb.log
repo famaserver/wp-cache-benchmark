@@ -1,0 +1,16 @@
+[apache-turbo-shop] run 1: 504.7 ms
+[apache-turbo-shop] run 2: 503.8 ms
+[apache-turbo-shop] run 3: 509.6 ms
+[apache-turbo-shop] run 4: 498.2 ms
+[apache-turbo-shop] run 5: 512.4 ms
+[apache-turbo-shop] run 6: 492.2 ms
+[apache-turbo-shop] run 7: 493.4 ms
+[apache-turbo-shop] run 8: 521.9 ms
+[apache-turbo-shop] run 9: 528.9 ms
+[apache-turbo-shop] run 10: 498.0 ms
+[apache-turbo-shop] run 11: 516.1 ms
+[apache-turbo-shop] run 12: 519.1 ms
+[apache-turbo-shop] run 13: 510.6 ms
+[apache-turbo-shop] run 14: 508.8 ms
+[apache-turbo-shop] run 15: 500.8 ms
+[apache-turbo-shop] median=508.8 ms  p95=521.9 ms  min=492.2  max=528.9  (n=15)

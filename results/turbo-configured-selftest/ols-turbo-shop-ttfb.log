@@ -1,0 +1,16 @@
+[ols-turbo-shop] run 1: 169.3 ms
+[ols-turbo-shop] run 2: 155.4 ms
+[ols-turbo-shop] run 3: 166.9 ms
+[ols-turbo-shop] run 4: 151.5 ms
+[ols-turbo-shop] run 5: 152.8 ms
+[ols-turbo-shop] run 6: 157.3 ms
+[ols-turbo-shop] run 7: 151.3 ms
+[ols-turbo-shop] run 8: 152.9 ms
+[ols-turbo-shop] run 9: 158.0 ms
+[ols-turbo-shop] run 10: 151.2 ms
+[ols-turbo-shop] run 11: 157.0 ms
+[ols-turbo-shop] run 12: 155.3 ms
+[ols-turbo-shop] run 13: 152.1 ms
+[ols-turbo-shop] run 14: 152.0 ms
+[ols-turbo-shop] run 15: 154.8 ms
+[ols-turbo-shop] median=154.8 ms  p95=166.9 ms  min=151.2  max=169.3  (n=15)

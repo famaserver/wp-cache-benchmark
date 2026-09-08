@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 470" font-family="Segoe UI, Tahoma, Arial, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 560" font-family="Segoe UI, Tahoma, Arial, sans-serif">
   <style>
     .lbl { font-size: 14px; fill: #888e99; }
     .val { font-size: 14px; font-weight: 600; fill: #888e99; }
@@ -7,6 +7,7 @@
     .base { fill: #9aa2af; }
     .lsc  { fill: #3fb950; }
     .rkt  { fill: #e8833a; }
+    .trb  { fill: #a371f7; }
   </style>
   <text x="20" y="30" class="hdr">Warm-cache throughput — 50 concurrent users (requests/second)</text>
   <text x="20" y="50" class="sub">Round 1 · 2026-09 · self-test¹ · higher is better · median of 3 × 60 s runs</text>
@@ -21,30 +22,39 @@
   <text x="20" y="143" class="lbl">Nginx — WP Rocket</text>
   <rect x="255" y="130" width="527" height="16" rx="3" class="rkt"/>
   <text x="530" y="143" class="val" fill="#fff">193.3</text>
+  <text x="20" y="168" class="lbl">Nginx — Turbo</text>
+  <rect x="255" y="155" width="34" height="16" rx="3" class="trb"/>
+  <text x="297" y="168" class="val">12.3</text>
 
   <!-- Apache -->
-  <text x="20" y="188" class="lbl">Apache — no cache</text>
-  <rect x="255" y="175" width="20" height="16" rx="3" class="base"/>
-  <text x="283" y="188" class="val">7.3</text>
-  <text x="20" y="213" class="lbl">Apache — LiteSpeed Cache</text>
-  <rect x="255" y="200" width="18" height="16" rx="3" class="lsc"/>
-  <text x="281" y="213" class="val">6.4 (page cache inert)</text>
-  <text x="20" y="238" class="lbl">Apache — WP Rocket</text>
-  <rect x="255" y="225" width="521" height="16" rx="3" class="rkt"/>
-  <text x="530" y="238" class="val" fill="#fff">190.9</text>
+  <text x="20" y="213" class="lbl">Apache — no cache</text>
+  <rect x="255" y="200" width="20" height="16" rx="3" class="base"/>
+  <text x="283" y="213" class="val">7.3</text>
+  <text x="20" y="238" class="lbl">Apache — LiteSpeed Cache</text>
+  <rect x="255" y="225" width="18" height="16" rx="3" class="lsc"/>
+  <text x="281" y="238" class="val">6.4 (page cache inert)</text>
+  <text x="20" y="263" class="lbl">Apache — WP Rocket</text>
+  <rect x="255" y="250" width="521" height="16" rx="3" class="rkt"/>
+  <text x="530" y="263" class="val" fill="#fff">190.9</text>
+  <text x="20" y="288" class="lbl">Apache — Turbo</text>
+  <rect x="255" y="275" width="33" height="16" rx="3" class="trb"/>
+  <text x="296" y="288" class="val">12.2</text>
 
   <!-- OLS -->
-  <text x="20" y="283" class="lbl">OpenLiteSpeed — no cache</text>
-  <rect x="255" y="270" width="20" height="16" rx="3" class="base"/>
-  <text x="283" y="283" class="val">7.3</text>
-  <text x="20" y="308" class="lbl">OpenLiteSpeed — LiteSpeed Cache</text>
-  <rect x="255" y="295" width="532" height="16" rx="3" class="lsc"/>
-  <text x="530" y="308" class="val" fill="#fff">194.9</text>
-  <text x="20" y="333" class="lbl">OpenLiteSpeed — WP Rocket</text>
-  <rect x="255" y="320" width="526" height="16" rx="3" class="rkt"/>
-  <text x="530" y="333" class="val" fill="#fff">192.9</text>
+  <text x="20" y="333" class="lbl">OpenLiteSpeed — no cache</text>
+  <rect x="255" y="320" width="20" height="16" rx="3" class="base"/>
+  <text x="283" y="333" class="val">7.3</text>
+  <text x="20" y="358" class="lbl">OpenLiteSpeed — LiteSpeed Cache</text>
+  <rect x="255" y="345" width="532" height="16" rx="3" class="lsc"/>
+  <text x="530" y="358" class="val" fill="#fff">194.9</text>
+  <text x="20" y="383" class="lbl">OpenLiteSpeed — WP Rocket</text>
+  <rect x="255" y="370" width="526" height="16" rx="3" class="rkt"/>
+  <text x="530" y="383" class="val" fill="#fff">192.9</text>
+  <text x="20" y="408" class="lbl">OpenLiteSpeed — Turbo</text>
+  <rect x="255" y="395" width="529" height="16" rx="3" class="trb"/>
+  <text x="530" y="408" class="val" fill="#fff">193.9</text>
 
-  <text x="20" y="378" class="sub">All cached results ~192-195 RPS are capped by the self-test setup (k6 shares the same 4 cores).</text>
-  <text x="20" y="395" class="sub">¹ load generator ran on the target server itself; external re-measurement pending.</text>
-  <text x="20" y="412" class="sub">Turbo · W3TC · WP Super Cache · WP Fastest Cache — coming in this round.</text>
+  <text x="20" y="453" class="sub">W3TC / WP Super Cache / WP Fastest Cache out of the box: page cache never engages (~6.5 RPS = baseline); enabled-settings runs queued.</text>
+  <text x="20" y="470" class="sub">All ~191-195 RPS results are capped by the self-test setup (k6 shares the same 4 cores).</text>
+  <text x="20" y="487" class="sub">¹ load generator ran on the target server itself; external re-measurement pending.</text>
 </svg>

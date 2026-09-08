@@ -1,0 +1,16 @@
+[nginx-turbo-shop] run 1: 504.4 ms
+[nginx-turbo-shop] run 2: 498.6 ms
+[nginx-turbo-shop] run 3: 517.7 ms
+[nginx-turbo-shop] run 4: 509.1 ms
+[nginx-turbo-shop] run 5: 486.0 ms
+[nginx-turbo-shop] run 6: 512.5 ms
+[nginx-turbo-shop] run 7: 513.6 ms
+[nginx-turbo-shop] run 8: 524.8 ms
+[nginx-turbo-shop] run 9: 515.8 ms
+[nginx-turbo-shop] run 10: 525.6 ms
+[nginx-turbo-shop] run 11: 502.8 ms
+[nginx-turbo-shop] run 12: 489.7 ms
+[nginx-turbo-shop] run 13: 509.3 ms
+[nginx-turbo-shop] run 14: 497.8 ms
+[nginx-turbo-shop] run 15: 524.2 ms
+[nginx-turbo-shop] median=509.3 ms  p95=524.8 ms  min=486.0  max=525.6  (n=15)

@@ -1,0 +1,16 @@
+[nginx-turbo-home] run 1: 502.4 ms
+[nginx-turbo-home] run 2: 472.0 ms
+[nginx-turbo-home] run 3: 476.0 ms
+[nginx-turbo-home] run 4: 478.4 ms
+[nginx-turbo-home] run 5: 478.7 ms
+[nginx-turbo-home] run 6: 489.2 ms
+[nginx-turbo-home] run 7: 472.1 ms
+[nginx-turbo-home] run 8: 469.8 ms
+[nginx-turbo-home] run 9: 488.7 ms
+[nginx-turbo-home] run 10: 468.2 ms
+[nginx-turbo-home] run 11: 492.8 ms
+[nginx-turbo-home] run 12: 476.9 ms
+[nginx-turbo-home] run 13: 474.6 ms
+[nginx-turbo-home] run 14: 480.0 ms
+[nginx-turbo-home] run 15: 467.6 ms
+[nginx-turbo-home] median=476.9 ms  p95=492.8 ms  min=467.6  max=502.4  (n=15)
