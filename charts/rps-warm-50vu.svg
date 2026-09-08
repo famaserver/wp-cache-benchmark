@@ -10,7 +10,7 @@
     .trb  { fill: #a371f7; }
   </style>
   <text x="20" y="30" class="hdr">Warm-cache throughput — 50 concurrent users (requests/second)</text>
-  <text x="20" y="50" class="sub">Round 1 · 2026-09 · self-test¹ · higher is better · median of 3 × 60 s runs</text>
+  <text x="20" y="50" class="sub">Test 1 · 2026-09-08 · self-test¹ · higher is better · median of 3 × 60 s runs</text>
 
   <!-- Nginx -->
   <text x="20" y="93" class="lbl">Nginx — no cache</text>

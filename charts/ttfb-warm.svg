@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 400" font-family="Segoe UI, Tahoma, Arial, sans-serif">
+  <style>
+    .lbl { font-size: 14px; fill: #888e99; }
+    .val { font-size: 14px; font-weight: 600; fill: #888e99; }
+    .hdr { font-size: 17px; font-weight: 700; fill: #7d8590; }
+    .sub { font-size: 12px; fill: #7d8590; }
+    .base { fill: #9aa2af; }
+    .lsc  { fill: #3fb950; }
+    .rkt  { fill: #e8833a; }
+    .trb  { fill: #a371f7; }
+  </style>
+  <text x="20" y="30" class="hdr">Warm-cache TTFB — single visitor, homepage (milliseconds)</text>
+  <text x="20" y="50" class="sub">Test 1 · 2026-09-08 · lower is better · median of 15 requests · best arena per plugin</text>
+
+  <text x="20" y="98" class="lbl">No cache (baseline)</text>
+  <rect x="255" y="85" width="510" height="18" rx="3" class="base"/>
+  <text x="530" y="99" class="val" fill="#fff">850 ms</text>
+
+  <text x="20" y="133" class="lbl">Turbo — on OpenLiteSpeed</text>
+  <rect x="255" y="120" width="93" height="18" rx="3" class="trb"/>
+  <text x="356" y="134" class="val">154 ms</text>
+
+  <text x="20" y="168" class="lbl">LiteSpeed Cache — on OpenLiteSpeed</text>
+  <rect x="255" y="155" width="92" height="18" rx="3" class="lsc"/>
+  <text x="355" y="169" class="val">153 ms</text>
+
+  <text x="20" y="203" class="lbl">WP Rocket — any web server</text>
+  <rect x="255" y="190" width="93" height="18" rx="3" class="rkt"/>
+  <text x="356" y="204" class="val">155 ms</text>
+
+  <text x="20" y="238" class="lbl">Turbo — on Nginx / Apache</text>
+  <rect x="255" y="225" width="288" height="18" rx="3" class="trb"/>
+  <text x="551" y="239" class="val">480 ms</text>
+
+  <text x="20" y="273" class="lbl">LiteSpeed Cache — on Nginx / Apache</text>
+  <rect x="255" y="260" width="551" height="18" rx="3" class="lsc"/>
+  <text x="560" y="274" class="val" fill="#fff">918 ms (slower than no cache)</text>
+
+  <text x="20" y="308" class="lbl">W3TC / WP Super Cache / WP Fastest Cache (as installed)</text>
+  <rect x="255" y="295" width="516" height="18" rx="3" class="base"/>
+  <text x="530" y="309" class="val" fill="#fff">~860 ms (cache never engages)</text>
+
+  <text x="20" y="355" class="sub">The residual ~150 ms on cached hits is the probe's TLS handshake; server-side serve time is sub-millisecond.</text>
+</svg>
