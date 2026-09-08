@@ -11,7 +11,7 @@ Every script, configuration, and raw data point is published in this repository 
 
 ## Test 1 — 2026-09-08
 
-**Environment:** dedicated VPS (provided by FamaServer) · 4 vCPU Intel Xeon Gold 6138 · 8 GB RAM · 40 GB NVMe (fio-verified: 87.9k IOPS) · Ubuntu 24.04 LTS · PHP 8.2 FPM (12 workers, identical on every stack) · MariaDB 10.11 · Redis · HTTPS/HTTP-2 · WordPress 7.1 + WooCommerce 9.9.5 + Woodmart 8.2.6 + Elementor — **830 products, 109 posts, 234 orders**. Load: k6, 50 concurrent users × 60 s × 3 runs, medians reported. [Full methodology →](results/)
+**Environment:** dedicated [VPS](https://famaserver.com/vps/) (provided by FamaServer) · 4 vCPU Intel Xeon Gold 6138 · 8 GB RAM · 40 GB NVMe (fio-verified: 87.9k IOPS) · Ubuntu 24.04 LTS · PHP 8.2 FPM (12 workers, identical on every stack) · MariaDB 10.11 · Redis · HTTPS/HTTP-2 · WordPress 7.1 + WooCommerce 9.9.5 + Woodmart 8.2.6 + Elementor — **830 products, 109 posts, 234 orders**. Load: k6, 50 concurrent users × 60 s × 3 runs, medians reported. [Full methodology →](results/)
 
 ### Plugins under test
 

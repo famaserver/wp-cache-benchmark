@@ -11,10 +11,10 @@
   <text x="20" y="30" class="hdr">Cache plugin power — requests/second, 50 concurrent users, warm cache</text>
   <text x="20" y="50" class="sub">Test 1 · 2026-09-08 · higher = stronger · median of 3 × 60 s k6 runs · self-test</text>
 
-  <!-- legend -->
-  <rect x="580" y="20" width="12" height="12" rx="2" class="ngx"/><text x="597" y="31" class="srv">Nginx</text>
-  <rect x="655" y="20" width="12" height="12" rx="2" class="apc"/><text x="672" y="31" class="srv">Apache</text>
-  <rect x="740" y="20" width="12" height="12" rx="2" class="ols"/><text x="757" y="31" class="srv">OpenLiteSpeed</text>
+  <!-- legend (own row, clear of the title) -->
+  <rect x="580" y="58" width="12" height="12" rx="2" class="ngx"/><text x="597" y="69" class="srv">Nginx</text>
+  <rect x="655" y="58" width="12" height="12" rx="2" class="apc"/><text x="672" y="69" class="srv">Apache</text>
+  <rect x="740" y="58" width="12" height="12" rx="2" class="ols"/><text x="757" y="69" class="srv">OpenLiteSpeed</text>
 
   <!-- baseline reference -->
   <text x="20" y="86" class="plug" fill="#9aa2af">No cache plugin (baseline)</text>
