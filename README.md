@@ -5,6 +5,18 @@
 An open, reproducible benchmark of WordPress cache plugins on three web servers: Nginx, Apache, and OpenLiteSpeed.
 Every script, configuration, and raw data point is published in this repository for independent verification.
 
+## 🏆 Overall ranking — Test 2
+
+Ranked by mean warm-cache throughput across all three web servers (a real site runs on one of them — a top plugin must deliver on whichever you have):
+
+| Rank | Plugin | Average RPS (Nginx + Apache + OLS) |
+|---|---|---|
+| 🥇 | **[Turbo Cache](https://www.zhaket.com/web/turbo-plugin) 3.2.4** | **192.8** |
+| 🥈 | WP Rocket 3.18.3 | 192.4 |
+| 🥉 | Cache Enabler 1.8.16 | 191.4 |
+
+LiteSpeed Cache averages 69.2 (top speed on OLS only, inert elsewhere); the remaining four plugins do not cache as installed. Full per-server tables and raw data below.
+
 ![Throughput](charts/rps-warm-50vu.svg)
 
 ![TTFB](charts/ttfb-warm.svg)
@@ -46,7 +58,7 @@ Auxiliary (not a page cache, evaluated separately in the cold-cache scenario): C
 
 ### What the tests prove
 
-1. **Turbo Cache is the only plugin in the top tier on all three web servers**: a statistical tie with WP Rocket on Nginx/Apache (192.7 vs 193.3 / 191.3 vs 190.9) and with LiteSpeed Cache on OpenLiteSpeed (194.4 vs 194.9) — ahead of WP Rocket there (192.9).
+1. **Turbo Cache ranks first overall with a 192.8 RPS average** and is the only plugin in the top tier on all three web servers: ahead of WP Rocket on Apache (191.3 vs 190.9) and on OpenLiteSpeed (194.4 vs 192.9, level with LiteSpeed Cache), and in a statistical tie with WP Rocket on Nginx (192.7 vs 193.3).
 2. **Turbo Cache is the only plugin with a native LiteSpeed server-cache integration besides LiteSpeed Cache itself** (verified miss→hit cycle with Turbo Cache's own `x-litespeed-tag: turbo_*` tags). WP Rocket has no such integration; LiteSpeed Cache outside LiteSpeed servers is pure overhead (13% slower than no plugin).
 3. **Warm TTFB ~161 ms on every web server** — under Google's 200 ms recommendation, with direct impact on crawl budget and Core Web Vitals.
 4. Cache hits are served by a pre-WordPress drop-in engine (`x-turbo-cache-engine: dropin`), introduced in 3.2.4 — the Nginx/Apache throughput jumped ×15.7 over 3.1.3.
