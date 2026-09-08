@@ -17,7 +17,7 @@ Every script, configuration, and raw data point is published in this repository 
 
 | # | Plugin | Version | Type |
 |---|---|---|---|
-| 1 | Turbo Cache | 3.2.4 | commercial |
+| 1 | [Turbo Cache](https://www.zhaket.com/web/turbo-plugin) | 3.2.4 | commercial |
 | 2 | LiteSpeed Cache | 7.9.1 | free |
 | 3 | WP Rocket | 3.18.3 | commercial |
 | 4 | W3 Total Cache | 2.10.6 | free |

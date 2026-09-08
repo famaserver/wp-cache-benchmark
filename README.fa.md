@@ -24,7 +24,7 @@
 
 | ردیف | افزونه | ورژن | نوع |
 |---|---|---|---|
-| ۱ | Turbo Cache | 3.2.4 | تجاری |
+| ۱ | [Turbo Cache](https://www.zhaket.com/web/turbo-plugin) | 3.2.4 | تجاری |
 | ۲ | LiteSpeed Cache | 7.9.1 | رایگان |
 | ۳ | WP Rocket | 3.18.3 | تجاری |
 | ۴ | W3 Total Cache | 2.10.6 | رایگان |

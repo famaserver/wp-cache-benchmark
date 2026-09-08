@@ -23,7 +23,7 @@
 
 | # | الإضافة | الإصدار | النوع |
 |---|---|---|---|
-| 1 | Turbo Cache | 3.2.4 | تجارية |
+| 1 | [Turbo Cache](https://www.zhaket.com/web/turbo-plugin) | 3.2.4 | تجارية |
 | 2 | LiteSpeed Cache | 7.9.1 | مجانية |
 | 3 | WP Rocket | 3.18.3 | تجارية |
 | 4 | W3 Total Cache | 2.10.6 | مجانية |
