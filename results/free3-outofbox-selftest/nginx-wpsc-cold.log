@@ -1,0 +1,10 @@
+[nginx-wpsc-cold-r1] run 1: 995.0 ms
+[nginx-wpsc-cold-r1] median=995.0 ms  p95=995.0 ms  min=995.0  max=995.0  (n=1)
+[nginx-wpsc-cold-r2] run 1: 972.5 ms
+[nginx-wpsc-cold-r2] median=972.5 ms  p95=972.5 ms  min=972.5  max=972.5  (n=1)
+[nginx-wpsc-cold-r3] run 1: 963.6 ms
+[nginx-wpsc-cold-r3] median=963.6 ms  p95=963.6 ms  min=963.6  max=963.6  (n=1)
+[nginx-wpsc-cold-r4] run 1: 979.5 ms
+[nginx-wpsc-cold-r4] median=979.5 ms  p95=979.5 ms  min=979.5  max=979.5  (n=1)
+[nginx-wpsc-cold-r5] run 1: 964.7 ms
+[nginx-wpsc-cold-r5] median=964.7 ms  p95=964.7 ms  min=964.7  max=964.7  (n=1)

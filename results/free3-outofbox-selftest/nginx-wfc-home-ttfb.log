@@ -1,0 +1,16 @@
+[nginx-wfc-home] run 1: 907.2 ms
+[nginx-wfc-home] run 2: 906.7 ms
+[nginx-wfc-home] run 3: 881.4 ms
+[nginx-wfc-home] run 4: 928.3 ms
+[nginx-wfc-home] run 5: 908.6 ms
+[nginx-wfc-home] run 6: 961.7 ms
+[nginx-wfc-home] run 7: 1049.5 ms
+[nginx-wfc-home] run 8: 1117.9 ms
+[nginx-wfc-home] run 9: 1035.0 ms
+[nginx-wfc-home] run 10: 1043.2 ms
+[nginx-wfc-home] run 11: 1038.3 ms
+[nginx-wfc-home] run 12: 1084.4 ms
+[nginx-wfc-home] run 13: 1021.6 ms
+[nginx-wfc-home] run 14: 912.2 ms
+[nginx-wfc-home] run 15: 897.9 ms
+[nginx-wfc-home] median=961.7 ms  p95=1084.4 ms  min=881.4  max=1117.9  (n=15)

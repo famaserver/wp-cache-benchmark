@@ -1,0 +1,16 @@
+[ols-wpsc-shop] run 1: 771.2 ms
+[ols-wpsc-shop] run 2: 757.0 ms
+[ols-wpsc-shop] run 3: 757.4 ms
+[ols-wpsc-shop] run 4: 774.0 ms
+[ols-wpsc-shop] run 5: 745.2 ms
+[ols-wpsc-shop] run 6: 772.7 ms
+[ols-wpsc-shop] run 7: 777.5 ms
+[ols-wpsc-shop] run 8: 756.8 ms
+[ols-wpsc-shop] run 9: 790.9 ms
+[ols-wpsc-shop] run 10: 760.1 ms
+[ols-wpsc-shop] run 11: 759.2 ms
+[ols-wpsc-shop] run 12: 784.9 ms
+[ols-wpsc-shop] run 13: 768.8 ms
+[ols-wpsc-shop] run 14: 794.1 ms
+[ols-wpsc-shop] run 15: 784.8 ms
+[ols-wpsc-shop] median=771.2 ms  p95=790.9 ms  min=745.2  max=794.1  (n=15)

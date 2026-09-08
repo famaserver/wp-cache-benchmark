@@ -1,0 +1,16 @@
+[apache-w3tc-shop] run 1: 763.9 ms
+[apache-w3tc-shop] run 2: 773.6 ms
+[apache-w3tc-shop] run 3: 793.3 ms
+[apache-w3tc-shop] run 4: 742.4 ms
+[apache-w3tc-shop] run 5: 774.4 ms
+[apache-w3tc-shop] run 6: 794.5 ms
+[apache-w3tc-shop] run 7: 766.9 ms
+[apache-w3tc-shop] run 8: 802.4 ms
+[apache-w3tc-shop] run 9: 768.4 ms
+[apache-w3tc-shop] run 10: 792.3 ms
+[apache-w3tc-shop] run 11: 771.9 ms
+[apache-w3tc-shop] run 12: 769.8 ms
+[apache-w3tc-shop] run 13: 776.0 ms
+[apache-w3tc-shop] run 14: 770.6 ms
+[apache-w3tc-shop] run 15: 770.6 ms
+[apache-w3tc-shop] median=771.9 ms  p95=794.5 ms  min=742.4  max=802.4  (n=15)

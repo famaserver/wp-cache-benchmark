@@ -1,0 +1,16 @@
+[ols-wpsc-home] run 1: 915.4 ms
+[ols-wpsc-home] run 2: 902.4 ms
+[ols-wpsc-home] run 3: 901.0 ms
+[ols-wpsc-home] run 4: 937.9 ms
+[ols-wpsc-home] run 5: 923.0 ms
+[ols-wpsc-home] run 6: 907.2 ms
+[ols-wpsc-home] run 7: 928.6 ms
+[ols-wpsc-home] run 8: 902.9 ms
+[ols-wpsc-home] run 9: 905.0 ms
+[ols-wpsc-home] run 10: 900.7 ms
+[ols-wpsc-home] run 11: 926.0 ms
+[ols-wpsc-home] run 12: 914.8 ms
+[ols-wpsc-home] run 13: 887.1 ms
+[ols-wpsc-home] run 14: 908.7 ms
+[ols-wpsc-home] run 15: 912.9 ms
+[ols-wpsc-home] median=908.7 ms  p95=928.6 ms  min=887.1  max=937.9  (n=15)

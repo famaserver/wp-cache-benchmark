@@ -1,0 +1,16 @@
+[nginx-w3tc-home] run 1: 946.1 ms
+[nginx-w3tc-home] run 2: 916.6 ms
+[nginx-w3tc-home] run 3: 913.1 ms
+[nginx-w3tc-home] run 4: 926.9 ms
+[nginx-w3tc-home] run 5: 941.6 ms
+[nginx-w3tc-home] run 6: 919.5 ms
+[nginx-w3tc-home] run 7: 913.9 ms
+[nginx-w3tc-home] run 8: 963.5 ms
+[nginx-w3tc-home] run 9: 889.6 ms
+[nginx-w3tc-home] run 10: 926.1 ms
+[nginx-w3tc-home] run 11: 921.2 ms
+[nginx-w3tc-home] run 12: 925.9 ms
+[nginx-w3tc-home] run 13: 911.0 ms
+[nginx-w3tc-home] run 14: 923.1 ms
+[nginx-w3tc-home] run 15: 897.2 ms
+[nginx-w3tc-home] median=921.2 ms  p95=946.1 ms  min=889.6  max=963.5  (n=15)

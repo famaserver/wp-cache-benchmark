@@ -1,0 +1,10 @@
+[ols-wpsc-cold-r1] run 1: 929.5 ms
+[ols-wpsc-cold-r1] median=929.5 ms  p95=929.5 ms  min=929.5  max=929.5  (n=1)
+[ols-wpsc-cold-r2] run 1: 943.6 ms
+[ols-wpsc-cold-r2] median=943.6 ms  p95=943.6 ms  min=943.6  max=943.6  (n=1)
+[ols-wpsc-cold-r3] run 1: 1159.6 ms
+[ols-wpsc-cold-r3] median=1159.6 ms  p95=1159.6 ms  min=1159.6  max=1159.6  (n=1)
+[ols-wpsc-cold-r4] run 1: 919.1 ms
+[ols-wpsc-cold-r4] median=919.1 ms  p95=919.1 ms  min=919.1  max=919.1  (n=1)
+[ols-wpsc-cold-r5] run 1: 933.8 ms
+[ols-wpsc-cold-r5] median=933.8 ms  p95=933.8 ms  min=933.8  max=933.8  (n=1)

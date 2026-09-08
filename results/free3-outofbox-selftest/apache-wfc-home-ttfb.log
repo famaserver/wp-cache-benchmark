@@ -1,0 +1,16 @@
+[apache-wfc-home] run 1: 912.2 ms
+[apache-wfc-home] run 2: 936.2 ms
+[apache-wfc-home] run 3: 908.9 ms
+[apache-wfc-home] run 4: 893.9 ms
+[apache-wfc-home] run 5: 919.6 ms
+[apache-wfc-home] run 6: 899.7 ms
+[apache-wfc-home] run 7: 905.9 ms
+[apache-wfc-home] run 8: 910.1 ms
+[apache-wfc-home] run 9: 924.8 ms
+[apache-wfc-home] run 10: 915.0 ms
+[apache-wfc-home] run 11: 945.1 ms
+[apache-wfc-home] run 12: 934.6 ms
+[apache-wfc-home] run 13: 941.8 ms
+[apache-wfc-home] run 14: 904.3 ms
+[apache-wfc-home] run 15: 963.5 ms
+[apache-wfc-home] median=915.0 ms  p95=945.1 ms  min=893.9  max=963.5  (n=15)

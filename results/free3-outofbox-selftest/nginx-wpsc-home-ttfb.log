@@ -1,0 +1,16 @@
+[nginx-wpsc-home] run 1: 959.0 ms
+[nginx-wpsc-home] run 2: 932.6 ms
+[nginx-wpsc-home] run 3: 990.7 ms
+[nginx-wpsc-home] run 4: 971.4 ms
+[nginx-wpsc-home] run 5: 897.9 ms
+[nginx-wpsc-home] run 6: 898.6 ms
+[nginx-wpsc-home] run 7: 917.5 ms
+[nginx-wpsc-home] run 8: 971.9 ms
+[nginx-wpsc-home] run 9: 919.5 ms
+[nginx-wpsc-home] run 10: 895.8 ms
+[nginx-wpsc-home] run 11: 900.2 ms
+[nginx-wpsc-home] run 12: 913.4 ms
+[nginx-wpsc-home] run 13: 893.3 ms
+[nginx-wpsc-home] run 14: 906.0 ms
+[nginx-wpsc-home] run 15: 899.4 ms
+[nginx-wpsc-home] median=913.4 ms  p95=971.9 ms  min=893.3  max=990.7  (n=15)

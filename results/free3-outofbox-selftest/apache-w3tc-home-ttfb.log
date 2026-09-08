@@ -1,0 +1,16 @@
+[apache-w3tc-home] run 1: 936.1 ms
+[apache-w3tc-home] run 2: 944.4 ms
+[apache-w3tc-home] run 3: 980.7 ms
+[apache-w3tc-home] run 4: 915.2 ms
+[apache-w3tc-home] run 5: 919.9 ms
+[apache-w3tc-home] run 6: 909.4 ms
+[apache-w3tc-home] run 7: 934.7 ms
+[apache-w3tc-home] run 8: 901.9 ms
+[apache-w3tc-home] run 9: 895.7 ms
+[apache-w3tc-home] run 10: 885.9 ms
+[apache-w3tc-home] run 11: 918.6 ms
+[apache-w3tc-home] run 12: 913.2 ms
+[apache-w3tc-home] run 13: 968.5 ms
+[apache-w3tc-home] run 14: 922.5 ms
+[apache-w3tc-home] run 15: 951.2 ms
+[apache-w3tc-home] median=919.9 ms  p95=968.5 ms  min=885.9  max=980.7  (n=15)

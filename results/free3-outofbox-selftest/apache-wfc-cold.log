@@ -1,0 +1,10 @@
+[apache-wfc-cold-r1] run 1: 965.4 ms
+[apache-wfc-cold-r1] median=965.4 ms  p95=965.4 ms  min=965.4  max=965.4  (n=1)
+[apache-wfc-cold-r2] run 1: 988.6 ms
+[apache-wfc-cold-r2] median=988.6 ms  p95=988.6 ms  min=988.6  max=988.6  (n=1)
+[apache-wfc-cold-r3] run 1: 980.6 ms
+[apache-wfc-cold-r3] median=980.6 ms  p95=980.6 ms  min=980.6  max=980.6  (n=1)
+[apache-wfc-cold-r4] run 1: 965.7 ms
+[apache-wfc-cold-r4] median=965.7 ms  p95=965.7 ms  min=965.7  max=965.7  (n=1)
+[apache-wfc-cold-r5] run 1: 966.8 ms
+[apache-wfc-cold-r5] median=966.8 ms  p95=966.8 ms  min=966.8  max=966.8  (n=1)

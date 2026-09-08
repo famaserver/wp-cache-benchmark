@@ -1,0 +1,16 @@
+[apache-wpsc-shop] run 1: 745.8 ms
+[apache-wpsc-shop] run 2: 771.0 ms
+[apache-wpsc-shop] run 3: 765.5 ms
+[apache-wpsc-shop] run 4: 760.4 ms
+[apache-wpsc-shop] run 5: 760.1 ms
+[apache-wpsc-shop] run 6: 760.5 ms
+[apache-wpsc-shop] run 7: 805.1 ms
+[apache-wpsc-shop] run 8: 784.2 ms
+[apache-wpsc-shop] run 9: 816.5 ms
+[apache-wpsc-shop] run 10: 793.0 ms
+[apache-wpsc-shop] run 11: 760.7 ms
+[apache-wpsc-shop] run 12: 757.1 ms
+[apache-wpsc-shop] run 13: 775.0 ms
+[apache-wpsc-shop] run 14: 780.4 ms
+[apache-wpsc-shop] run 15: 776.9 ms
+[apache-wpsc-shop] median=771.0 ms  p95=805.1 ms  min=745.8  max=816.5  (n=15)

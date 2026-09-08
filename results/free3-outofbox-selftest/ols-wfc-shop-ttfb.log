@@ -1,0 +1,16 @@
+[ols-wfc-shop] run 1: 769.4 ms
+[ols-wfc-shop] run 2: 752.9 ms
+[ols-wfc-shop] run 3: 784.7 ms
+[ols-wfc-shop] run 4: 785.2 ms
+[ols-wfc-shop] run 5: 766.9 ms
+[ols-wfc-shop] run 6: 753.9 ms
+[ols-wfc-shop] run 7: 822.0 ms
+[ols-wfc-shop] run 8: 772.0 ms
+[ols-wfc-shop] run 9: 787.1 ms
+[ols-wfc-shop] run 10: 804.0 ms
+[ols-wfc-shop] run 11: 812.2 ms
+[ols-wfc-shop] run 12: 780.0 ms
+[ols-wfc-shop] run 13: 776.5 ms
+[ols-wfc-shop] run 14: 796.6 ms
+[ols-wfc-shop] run 15: 789.4 ms
+[ols-wfc-shop] median=784.7 ms  p95=812.2 ms  min=752.9  max=822.0  (n=15)

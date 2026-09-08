@@ -1,0 +1,16 @@
+[ols-w3tc-shop] run 1: 832.9 ms
+[ols-w3tc-shop] run 2: 786.0 ms
+[ols-w3tc-shop] run 3: 786.7 ms
+[ols-w3tc-shop] run 4: 768.3 ms
+[ols-w3tc-shop] run 5: 761.6 ms
+[ols-w3tc-shop] run 6: 760.1 ms
+[ols-w3tc-shop] run 7: 758.9 ms
+[ols-w3tc-shop] run 8: 746.1 ms
+[ols-w3tc-shop] run 9: 765.8 ms
+[ols-w3tc-shop] run 10: 802.6 ms
+[ols-w3tc-shop] run 11: 846.0 ms
+[ols-w3tc-shop] run 12: 808.7 ms
+[ols-w3tc-shop] run 13: 766.3 ms
+[ols-w3tc-shop] run 14: 769.1 ms
+[ols-w3tc-shop] run 15: 762.9 ms
+[ols-w3tc-shop] median=768.3 ms  p95=832.9 ms  min=746.1  max=846.0  (n=15)

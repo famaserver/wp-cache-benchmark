@@ -1,0 +1,10 @@
+[nginx-wfc-cold-r1] run 1: 968.0 ms
+[nginx-wfc-cold-r1] median=968.0 ms  p95=968.0 ms  min=968.0  max=968.0  (n=1)
+[nginx-wfc-cold-r2] run 1: 982.4 ms
+[nginx-wfc-cold-r2] median=982.4 ms  p95=982.4 ms  min=982.4  max=982.4  (n=1)
+[nginx-wfc-cold-r3] run 1: 957.6 ms
+[nginx-wfc-cold-r3] median=957.6 ms  p95=957.6 ms  min=957.6  max=957.6  (n=1)
+[nginx-wfc-cold-r4] run 1: 964.6 ms
+[nginx-wfc-cold-r4] median=964.6 ms  p95=964.6 ms  min=964.6  max=964.6  (n=1)
+[nginx-wfc-cold-r5] run 1: 988.5 ms
+[nginx-wfc-cold-r5] median=988.5 ms  p95=988.5 ms  min=988.5  max=988.5  (n=1)

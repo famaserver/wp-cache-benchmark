@@ -1,0 +1,16 @@
+[apache-wfc-shop] run 1: 766.6 ms
+[apache-wfc-shop] run 2: 783.6 ms
+[apache-wfc-shop] run 3: 774.8 ms
+[apache-wfc-shop] run 4: 770.3 ms
+[apache-wfc-shop] run 5: 778.1 ms
+[apache-wfc-shop] run 6: 778.7 ms
+[apache-wfc-shop] run 7: 761.1 ms
+[apache-wfc-shop] run 8: 757.8 ms
+[apache-wfc-shop] run 9: 770.3 ms
+[apache-wfc-shop] run 10: 775.3 ms
+[apache-wfc-shop] run 11: 755.0 ms
+[apache-wfc-shop] run 12: 756.4 ms
+[apache-wfc-shop] run 13: 752.4 ms
+[apache-wfc-shop] run 14: 793.2 ms
+[apache-wfc-shop] run 15: 781.2 ms
+[apache-wfc-shop] median=770.3 ms  p95=783.6 ms  min=752.4  max=793.2  (n=15)

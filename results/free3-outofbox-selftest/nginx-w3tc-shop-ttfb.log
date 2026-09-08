@@ -1,0 +1,16 @@
+[nginx-w3tc-shop] run 1: 766.4 ms
+[nginx-w3tc-shop] run 2: 821.0 ms
+[nginx-w3tc-shop] run 3: 790.1 ms
+[nginx-w3tc-shop] run 4: 767.5 ms
+[nginx-w3tc-shop] run 5: 778.6 ms
+[nginx-w3tc-shop] run 6: 780.0 ms
+[nginx-w3tc-shop] run 7: 793.7 ms
+[nginx-w3tc-shop] run 8: 770.1 ms
+[nginx-w3tc-shop] run 9: 758.1 ms
+[nginx-w3tc-shop] run 10: 794.4 ms
+[nginx-w3tc-shop] run 11: 786.1 ms
+[nginx-w3tc-shop] run 12: 767.7 ms
+[nginx-w3tc-shop] run 13: 798.8 ms
+[nginx-w3tc-shop] run 14: 781.9 ms
+[nginx-w3tc-shop] run 15: 749.4 ms
+[nginx-w3tc-shop] median=780.0 ms  p95=798.8 ms  min=749.4  max=821.0  (n=15)

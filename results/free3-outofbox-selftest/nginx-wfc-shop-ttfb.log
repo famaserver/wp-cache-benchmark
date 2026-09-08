@@ -1,0 +1,16 @@
+[nginx-wfc-shop] run 1: 774.9 ms
+[nginx-wfc-shop] run 2: 775.6 ms
+[nginx-wfc-shop] run 3: 802.7 ms
+[nginx-wfc-shop] run 4: 739.0 ms
+[nginx-wfc-shop] run 5: 758.4 ms
+[nginx-wfc-shop] run 6: 773.0 ms
+[nginx-wfc-shop] run 7: 768.7 ms
+[nginx-wfc-shop] run 8: 761.6 ms
+[nginx-wfc-shop] run 9: 807.2 ms
+[nginx-wfc-shop] run 10: 757.0 ms
+[nginx-wfc-shop] run 11: 793.0 ms
+[nginx-wfc-shop] run 12: 770.4 ms
+[nginx-wfc-shop] run 13: 761.1 ms
+[nginx-wfc-shop] run 14: 762.0 ms
+[nginx-wfc-shop] run 15: 769.8 ms
+[nginx-wfc-shop] median=769.8 ms  p95=802.7 ms  min=739.0  max=807.2  (n=15)

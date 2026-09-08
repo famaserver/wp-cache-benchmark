@@ -1,0 +1,16 @@
+[ols-w3tc-home] run 1: 899.0 ms
+[ols-w3tc-home] run 2: 904.9 ms
+[ols-w3tc-home] run 3: 906.5 ms
+[ols-w3tc-home] run 4: 924.6 ms
+[ols-w3tc-home] run 5: 906.1 ms
+[ols-w3tc-home] run 6: 908.4 ms
+[ols-w3tc-home] run 7: 911.6 ms
+[ols-w3tc-home] run 8: 914.1 ms
+[ols-w3tc-home] run 9: 890.0 ms
+[ols-w3tc-home] run 10: 900.4 ms
+[ols-w3tc-home] run 11: 956.6 ms
+[ols-w3tc-home] run 12: 1037.9 ms
+[ols-w3tc-home] run 13: 975.0 ms
+[ols-w3tc-home] run 14: 1008.6 ms
+[ols-w3tc-home] run 15: 992.8 ms
+[ols-w3tc-home] median=911.6 ms  p95=1008.6 ms  min=890.0  max=1037.9  (n=15)

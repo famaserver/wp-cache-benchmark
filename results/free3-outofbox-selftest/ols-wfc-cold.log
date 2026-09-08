@@ -1,0 +1,10 @@
+[ols-wfc-cold-r1] run 1: 913.8 ms
+[ols-wfc-cold-r1] median=913.8 ms  p95=913.8 ms  min=913.8  max=913.8  (n=1)
+[ols-wfc-cold-r2] run 1: 922.6 ms
+[ols-wfc-cold-r2] median=922.6 ms  p95=922.6 ms  min=922.6  max=922.6  (n=1)
+[ols-wfc-cold-r3] run 1: 897.8 ms
+[ols-wfc-cold-r3] median=897.8 ms  p95=897.8 ms  min=897.8  max=897.8  (n=1)
+[ols-wfc-cold-r4] run 1: 948.3 ms
+[ols-wfc-cold-r4] median=948.3 ms  p95=948.3 ms  min=948.3  max=948.3  (n=1)
+[ols-wfc-cold-r5] run 1: 920.2 ms
+[ols-wfc-cold-r5] median=920.2 ms  p95=920.2 ms  min=920.2  max=920.2  (n=1)

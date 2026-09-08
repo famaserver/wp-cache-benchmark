@@ -1,0 +1,10 @@
+[nginx-w3tc-cold-r1] run 1: 964.3 ms
+[nginx-w3tc-cold-r1] median=964.3 ms  p95=964.3 ms  min=964.3  max=964.3  (n=1)
+[nginx-w3tc-cold-r2] run 1: 974.5 ms
+[nginx-w3tc-cold-r2] median=974.5 ms  p95=974.5 ms  min=974.5  max=974.5  (n=1)
+[nginx-w3tc-cold-r3] run 1: 957.1 ms
+[nginx-w3tc-cold-r3] median=957.1 ms  p95=957.1 ms  min=957.1  max=957.1  (n=1)
+[nginx-w3tc-cold-r4] run 1: 980.7 ms
+[nginx-w3tc-cold-r4] median=980.7 ms  p95=980.7 ms  min=980.7  max=980.7  (n=1)
+[nginx-w3tc-cold-r5] run 1: 988.6 ms
+[nginx-w3tc-cold-r5] median=988.6 ms  p95=988.6 ms  min=988.6  max=988.6  (n=1)

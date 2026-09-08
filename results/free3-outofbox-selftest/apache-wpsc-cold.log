@@ -1,0 +1,10 @@
+[apache-wpsc-cold-r1] run 1: 970.7 ms
+[apache-wpsc-cold-r1] median=970.7 ms  p95=970.7 ms  min=970.7  max=970.7  (n=1)
+[apache-wpsc-cold-r2] run 1: 965.8 ms
+[apache-wpsc-cold-r2] median=965.8 ms  p95=965.8 ms  min=965.8  max=965.8  (n=1)
+[apache-wpsc-cold-r3] run 1: 956.4 ms
+[apache-wpsc-cold-r3] median=956.4 ms  p95=956.4 ms  min=956.4  max=956.4  (n=1)
+[apache-wpsc-cold-r4] run 1: 959.1 ms
+[apache-wpsc-cold-r4] median=959.1 ms  p95=959.1 ms  min=959.1  max=959.1  (n=1)
+[apache-wpsc-cold-r5] run 1: 967.3 ms
+[apache-wpsc-cold-r5] median=967.3 ms  p95=967.3 ms  min=967.3  max=967.3  (n=1)

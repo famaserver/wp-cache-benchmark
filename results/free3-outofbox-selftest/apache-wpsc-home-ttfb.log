@@ -1,0 +1,16 @@
+[apache-wpsc-home] run 1: 916.7 ms
+[apache-wpsc-home] run 2: 955.1 ms
+[apache-wpsc-home] run 3: 891.0 ms
+[apache-wpsc-home] run 4: 901.8 ms
+[apache-wpsc-home] run 5: 926.9 ms
+[apache-wpsc-home] run 6: 890.0 ms
+[apache-wpsc-home] run 7: 918.3 ms
+[apache-wpsc-home] run 8: 940.5 ms
+[apache-wpsc-home] run 9: 909.8 ms
+[apache-wpsc-home] run 10: 903.5 ms
+[apache-wpsc-home] run 11: 923.8 ms
+[apache-wpsc-home] run 12: 910.7 ms
+[apache-wpsc-home] run 13: 905.8 ms
+[apache-wpsc-home] run 14: 895.8 ms
+[apache-wpsc-home] run 15: 919.4 ms
+[apache-wpsc-home] median=910.7 ms  p95=940.5 ms  min=890.0  max=955.1  (n=15)

@@ -1,0 +1,16 @@
+[ols-wfc-home] run 1: 887.7 ms
+[ols-wfc-home] run 2: 905.1 ms
+[ols-wfc-home] run 3: 925.3 ms
+[ols-wfc-home] run 4: 909.0 ms
+[ols-wfc-home] run 5: 931.9 ms
+[ols-wfc-home] run 6: 920.2 ms
+[ols-wfc-home] run 7: 925.1 ms
+[ols-wfc-home] run 8: 940.3 ms
+[ols-wfc-home] run 9: 934.1 ms
+[ols-wfc-home] run 10: 877.5 ms
+[ols-wfc-home] run 11: 900.1 ms
+[ols-wfc-home] run 12: 906.2 ms
+[ols-wfc-home] run 13: 917.5 ms
+[ols-wfc-home] run 14: 921.1 ms
+[ols-wfc-home] run 15: 937.0 ms
+[ols-wfc-home] median=920.2 ms  p95=937.0 ms  min=877.5  max=940.3  (n=15)
