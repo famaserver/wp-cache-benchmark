@@ -1,0 +1,16 @@
+[apache-turbo324-shop] run 1: 172.8 ms
+[apache-turbo324-shop] run 2: 163.0 ms
+[apache-turbo324-shop] run 3: 164.0 ms
+[apache-turbo324-shop] run 4: 158.6 ms
+[apache-turbo324-shop] run 5: 159.3 ms
+[apache-turbo324-shop] run 6: 156.1 ms
+[apache-turbo324-shop] run 7: 160.0 ms
+[apache-turbo324-shop] run 8: 159.0 ms
+[apache-turbo324-shop] run 9: 156.6 ms
+[apache-turbo324-shop] run 10: 151.9 ms
+[apache-turbo324-shop] run 11: 156.7 ms
+[apache-turbo324-shop] run 12: 162.0 ms
+[apache-turbo324-shop] run 13: 161.2 ms
+[apache-turbo324-shop] run 14: 162.3 ms
+[apache-turbo324-shop] run 15: 161.2 ms
+[apache-turbo324-shop] median=160.0 ms  p95=164.0 ms  min=151.9  max=172.8  (n=15)

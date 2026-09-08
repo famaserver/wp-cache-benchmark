@@ -1,0 +1,16 @@
+[apache-turbo324-home] run 1: 182.8 ms
+[apache-turbo324-home] run 2: 158.7 ms
+[apache-turbo324-home] run 3: 178.6 ms
+[apache-turbo324-home] run 4: 158.8 ms
+[apache-turbo324-home] run 5: 156.3 ms
+[apache-turbo324-home] run 6: 155.7 ms
+[apache-turbo324-home] run 7: 166.0 ms
+[apache-turbo324-home] run 8: 160.2 ms
+[apache-turbo324-home] run 9: 161.1 ms
+[apache-turbo324-home] run 10: 156.5 ms
+[apache-turbo324-home] run 11: 164.7 ms
+[apache-turbo324-home] run 12: 162.2 ms
+[apache-turbo324-home] run 13: 163.4 ms
+[apache-turbo324-home] run 14: 164.9 ms
+[apache-turbo324-home] run 15: 157.1 ms
+[apache-turbo324-home] median=161.1 ms  p95=178.6 ms  min=155.7  max=182.8  (n=15)

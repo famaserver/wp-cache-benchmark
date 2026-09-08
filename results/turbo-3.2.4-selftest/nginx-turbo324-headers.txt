@@ -1,0 +1,5 @@
+x-cache: HIT
+x-cache-provider: turbo
+x-turbo-cache: HIT
+x-turbo-cache-engine: dropin
+cache-control: public, max-age=600, must-revalidate

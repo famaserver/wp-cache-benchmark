@@ -1,0 +1,16 @@
+[ols-turbo324-home] run 1: 165.5 ms
+[ols-turbo324-home] run 2: 162.3 ms
+[ols-turbo324-home] run 3: 158.0 ms
+[ols-turbo324-home] run 4: 172.0 ms
+[ols-turbo324-home] run 5: 172.2 ms
+[ols-turbo324-home] run 6: 156.3 ms
+[ols-turbo324-home] run 7: 153.9 ms
+[ols-turbo324-home] run 8: 156.7 ms
+[ols-turbo324-home] run 9: 281.2 ms
+[ols-turbo324-home] run 10: 180.5 ms
+[ols-turbo324-home] run 11: 178.1 ms
+[ols-turbo324-home] run 12: 174.5 ms
+[ols-turbo324-home] run 13: 159.4 ms
+[ols-turbo324-home] run 14: 153.0 ms
+[ols-turbo324-home] run 15: 159.9 ms
+[ols-turbo324-home] median=162.3 ms  p95=180.5 ms  min=153.0  max=281.2  (n=15)

@@ -1,0 +1,13 @@
+{
+ "label": "nginx-turbo324",
+ "run": 2,
+ "perf_score": 55,
+ "fcp_ms": 3491,
+ "lcp_ms": 4031,
+ "tbt_ms": 196,
+ "cls": 0.05,
+ "speed_index": 3491,
+ "tti_ms": 5824,
+ "observed_load_ms": 2070,
+ "dcl_ms": 1803
+}

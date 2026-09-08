@@ -9,7 +9,7 @@
     .ngx { fill: #4f8ff7; } .apc { fill: #d0a215; } .ols { fill: #3fb950; } .bse { fill: #9aa2af; }
   </style>
   <text x="20" y="30" class="hdr">Cache plugin power — requests/second, 50 concurrent users, warm cache</text>
-  <text x="20" y="50" class="sub">Test 1 · 2026-09-08 · higher = stronger · median of 3 × 60 s k6 runs · self-test</text>
+  <text x="20" y="50" class="sub">Test 2 · 2026-09-08 · higher = stronger · median of 3 × 60 s k6 runs · self-test</text>
 
   <!-- legend (own row, clear of the title) -->
   <rect x="580" y="58" width="12" height="12" rx="2" class="ngx"/><text x="597" y="69" class="srv">Nginx</text>
@@ -22,11 +22,11 @@
   <text x="208" y="105" class="val">7.3 RPS — the server on its own</text>
 
   <!-- TURBO -->
-  <text x="20" y="150" class="plug" fill="#a371f7">1. Turbo 3.1.3</text>
-  <text x="200" y="150" class="note">fastest on the LiteSpeed stack 🏆 + real caching on every web server</text>
-  <text x="130" y="172" class="srv">Nginx</text>   <rect x="180" y="162" width="33" height="12" rx="2" class="ngx"/><text x="221" y="173" class="val">12.3</text>
-  <text x="122" y="192" class="srv">Apache</text>  <rect x="180" y="182" width="33" height="12" rx="2" class="apc"/><text x="221" y="193" class="val">12.2</text>
-  <text x="140" y="212" class="srv">OLS</text>     <rect x="180" y="202" width="517" height="12" rx="2" class="ols"/><text x="600" y="213" class="val" fill="#fff">193.9</text>
+  <text x="20" y="150" class="plug" fill="#a371f7">1. Turbo 3.2.4</text>
+  <text x="200" y="150" class="note">top tier on ALL three web servers 🏆 + native LiteSpeed integration</text>
+  <text x="130" y="172" class="srv">Nginx</text>   <rect x="180" y="162" width="514" height="12" rx="2" class="ngx"/><text x="600" y="173" class="val" fill="#fff">192.7</text>
+  <text x="122" y="192" class="srv">Apache</text>  <rect x="180" y="182" width="510" height="12" rx="2" class="apc"/><text x="600" y="193" class="val" fill="#fff">191.3</text>
+  <text x="140" y="212" class="srv">OLS</text>     <rect x="180" y="202" width="518" height="12" rx="2" class="ols"/><text x="600" y="213" class="val" fill="#fff">194.4</text>
 
   <!-- LSCACHE -->
   <text x="20" y="256" class="plug">2. LiteSpeed Cache 7.9.1</text>

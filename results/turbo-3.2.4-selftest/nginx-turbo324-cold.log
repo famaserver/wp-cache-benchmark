@@ -1,0 +1,10 @@
+[nginx-turbo324-cold-r1] run 1: 2025.2 ms
+[nginx-turbo324-cold-r1] median=2025.2 ms  p95=2025.2 ms  min=2025.2  max=2025.2  (n=1)
+[nginx-turbo324-cold-r2] run 1: 2086.6 ms
+[nginx-turbo324-cold-r2] median=2086.6 ms  p95=2086.6 ms  min=2086.6  max=2086.6  (n=1)
+[nginx-turbo324-cold-r3] run 1: 2048.4 ms
+[nginx-turbo324-cold-r3] median=2048.4 ms  p95=2048.4 ms  min=2048.4  max=2048.4  (n=1)
+[nginx-turbo324-cold-r4] run 1: 2083.5 ms
+[nginx-turbo324-cold-r4] median=2083.5 ms  p95=2083.5 ms  min=2083.5  max=2083.5  (n=1)
+[nginx-turbo324-cold-r5] run 1: 1952.9 ms
+[nginx-turbo324-cold-r5] median=1952.9 ms  p95=1952.9 ms  min=1952.9  max=1952.9  (n=1)

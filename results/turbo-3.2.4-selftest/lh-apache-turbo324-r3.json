@@ -1,0 +1,13 @@
+{
+ "label": "apache-turbo324",
+ "run": 3,
+ "perf_score": 59,
+ "fcp_ms": 3140,
+ "lcp_ms": 3480,
+ "tbt_ms": 179,
+ "cls": 0.049,
+ "speed_index": 3140,
+ "tti_ms": 4892,
+ "observed_load_ms": 2155,
+ "dcl_ms": 1925
+}

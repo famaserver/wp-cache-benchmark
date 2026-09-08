@@ -1,0 +1,13 @@
+{
+ "label": "ols-turbo324",
+ "run": 3,
+ "perf_score": 56,
+ "fcp_ms": 3565,
+ "lcp_ms": 3845,
+ "tbt_ms": 191,
+ "cls": 0.05,
+ "speed_index": 3565,
+ "tti_ms": 5223,
+ "observed_load_ms": 2092,
+ "dcl_ms": 1856
+}

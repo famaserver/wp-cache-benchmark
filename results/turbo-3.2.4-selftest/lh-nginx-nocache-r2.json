@@ -1,0 +1,13 @@
+{
+ "label": "nginx-nocache",
+ "run": 2,
+ "perf_score": 55,
+ "fcp_ms": 3490,
+ "lcp_ms": 4370,
+ "tbt_ms": 188,
+ "cls": 0.049,
+ "speed_index": 3490,
+ "tti_ms": 5810,
+ "observed_load_ms": 2100,
+ "dcl_ms": 1870
+}
