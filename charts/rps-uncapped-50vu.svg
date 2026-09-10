@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 600" font-family="Segoe UI, Tahoma, Arial, sans-serif">
+  <style>
+    .plug { font-size: 16px; font-weight: 700; fill: #7d8590; }
+    .note { font-size: 12.5px; fill: #8b949e; }
+    .srv  { font-size: 12px; fill: #8b949e; }
+    .val  { font-size: 13px; font-weight: 700; fill: #8b949e; }
+    .hdr  { font-size: 18px; font-weight: 700; fill: #7d8590; }
+    .sub  { font-size: 12px; fill: #7d8590; }
+    .ngx { fill: #4f8ff7; } .apc { fill: #d0a215; } .ols { fill: #3fb950; } .bse { fill: #9aa2af; }
+  </style>
+  <text x="20" y="30" class="hdr">Test 3 — uncapped throughput, 50 concurrent users (requests/second)</text>
+  <text x="20" y="50" class="sub">2026-09-10 · no harness ceiling · median of 5 × 30 s k6 runs · each plugin in its best supported mode per server · self-test</text>
+
+  <rect x="580" y="58" width="12" height="12" rx="2" class="ngx"/><text x="597" y="69" class="srv">Nginx</text>
+  <rect x="655" y="58" width="12" height="12" rx="2" class="apc"/><text x="672" y="69" class="srv">Apache</text>
+  <rect x="740" y="58" width="12" height="12" rx="2" class="ols"/><text x="757" y="69" class="srv">OpenLiteSpeed</text>
+
+  <!-- TURBO best modes -->
+  <text x="20" y="105" class="plug" fill="#a371f7">1. Turbo Cache 3.3.3</text>
+  <text x="220" y="105" class="note">first on every server — rewrite/server-cache engines no rival automates</text>
+  <text x="60" y="127" class="srv">Nginx · rewrite</text>   <rect x="180" y="117" width="600" height="12" rx="2" class="ngx"/><text x="700" y="128" class="val" fill="#fff">3154</text>
+  <text x="47" y="147" class="srv">OLS · server cache</text><rect x="180" y="137" width="433" height="12" rx="2" class="ols"/><text x="560" y="148" class="val" fill="#fff">2279</text>
+  <text x="49" y="167" class="srv">Apache · .htaccess</text><rect x="180" y="157" width="423" height="12" rx="2" class="apc"/><text x="550" y="168" class="val" fill="#fff">2228</text>
+  <text x="59" y="187" class="srv">Nginx · drop-in</text>  <rect x="180" y="177" width="222" height="12" rx="2" class="ngx"/><text x="410" y="188" class="val">1170</text>
+
+  <!-- LSCACHE -->
+  <text x="20" y="231" class="plug">2. LiteSpeed Cache 7.9.1</text>
+  <text x="280" y="231" class="note">strong — but only on LiteSpeed servers; inert on Nginx/Apache</text>
+  <text x="47" y="253" class="srv">OLS · server cache</text><rect x="180" y="243" width="397" height="12" rx="2" class="ols"/><text x="520" y="254" class="val" fill="#fff">2091</text>
+  <text x="43" y="273" class="srv">Nginx / Apache</text>   <rect x="180" y="263" width="3" height="12" rx="1" class="bse"/><text x="190" y="274" class="val">page cache inert</text>
+
+  <!-- CACHE ENABLER -->
+  <text x="20" y="317" class="plug">3. Cache Enabler 1.8.16</text>
+  <text x="270" y="317" class="note">solid free drop-in — no rewrite or server-cache mode</text>
+  <text x="140" y="339" class="srv">OLS</text>    <rect x="180" y="329" width="228" height="12" rx="2" class="ols"/><text x="415" y="340" class="val">1198</text>
+  <text x="130" y="359" class="srv">Nginx</text>  <rect x="180" y="349" width="195" height="12" rx="2" class="ngx"/><text x="382" y="360" class="val">1025</text>
+  <text x="122" y="379" class="srv">Apache</text> <rect x="180" y="369" width="154" height="12" rx="2" class="apc"/><text x="341" y="380" class="val">808</text>
+
+  <!-- ROCKET -->
+  <text x="20" y="423" class="plug">4. WP Rocket 3.18.3</text>
+  <text x="250" y="423" class="note">drop-in only — no rewrite mode, no LiteSpeed integration</text>
+  <text x="140" y="445" class="srv">OLS</text>    <rect x="180" y="435" width="210" height="12" rx="2" class="ols"/><text x="397" y="446" class="val">1106</text>
+  <text x="130" y="465" class="srv">Nginx</text>  <rect x="180" y="455" width="183" height="12" rx="2" class="ngx"/><text x="370" y="466" class="val">961</text>
+  <text x="122" y="485" class="srv">Apache</text> <rect x="180" y="475" width="146" height="12" rx="2" class="apc"/><text x="333" y="486" class="val">766</text>
+
+  <text x="20" y="530" class="sub">W3 Total Cache · WP Super Cache · WP Fastest Cache · WP-Optimize: page cache never engages as installed (~6 RPS = baseline) — enabled-settings round queued.</text>
+  <text x="20" y="547" class="sub">No-cache baseline: 7.3 RPS. Standard deviations and raw k6 JSON for every run: results/test3-uncapped-selftest/</text>
+  <text x="20" y="564" class="sub">Self-test: the load generator shared the server's 4 cores — figures are conservative lower bounds. External re-measurement planned (Test 4).</text>
+</svg>

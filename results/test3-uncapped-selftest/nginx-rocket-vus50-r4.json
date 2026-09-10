@@ -1,0 +1,1 @@
+{"label":"nginx-rocket-r4","vus":50,"duration":"30s","rps":960.9177381613001,"ttfb_ms":{"p50":44.0729815,"p95":53.2582217,"avg":44.45268349844159,"max":90.679459},"error_rate":0,"requests":28868}

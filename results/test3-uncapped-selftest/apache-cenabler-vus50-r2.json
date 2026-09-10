@@ -1,0 +1,1 @@
+{"label":"apache-cenabler-r2","vus":50,"duration":"30s","rps":819.0288012086569,"ttfb_ms":{"p50":50.476943,"p95":57.7589888,"avg":50.8091564826717,"max":121.400703},"error_rate":0,"requests":24613}

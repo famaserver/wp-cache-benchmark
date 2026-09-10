@@ -1,0 +1,1 @@
+{"label":"apache-turbo-r1","vus":50,"duration":"30s","rps":807.4653029645867,"ttfb_ms":{"p50":51.242701,"p95":64.6911602,"avg":52.13247830750542,"max":124.996273},"error_rate":0,"requests":24263}

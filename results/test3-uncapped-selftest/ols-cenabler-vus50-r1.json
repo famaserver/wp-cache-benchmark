@@ -1,0 +1,1 @@
+{"label":"ols-cenabler-r1","vus":50,"duration":"30s","rps":1189.1263860269385,"ttfb_ms":{"p50":34.066972,"p95":41.2813809,"avg":34.4308757995915,"max":87.302612},"error_rate":0,"requests":35722}

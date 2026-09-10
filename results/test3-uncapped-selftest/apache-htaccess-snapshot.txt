@@ -1,0 +1,32 @@
+# BEGIN LSCACHE
+# END LSCACHE
+# BEGIN NON_LSCACHE
+# END NON_LSCACHE
+# This file was updated by Duplicator on 2026-09-07 12:26:07.
+# See the original_files_ folder for the original source_site_htaccess file.
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	RewriteBase /
+	RewriteRule ^index\.php$ - [L]
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteRule . /index.php [L]
+</IfModule>
+# END WordPress
+
+# BEGIN TURBO_LSCACHE
+# دستورالعمل‌های (خطوط) بین "BEGIN TURBO_LSCACHE" و "END TURBO_LSCACHE"
+# به طور پویا تولید شده‌اند، و فقط باید به وسیلهٔ صافی‌های وردرپرس ویرایش شوند.
+# هر تغییری در دستورالعمل‌های بین این نشان‌گرها بازنویشی خواهند شد.
+# END TURBO_LSCACHE
+# BEGIN TURBO_FAST_404
+# دستورالعمل‌های (خطوط) بین "BEGIN TURBO_FAST_404" و "END TURBO_FAST_404"
+# به طور پویا تولید شده‌اند، و فقط باید به وسیلهٔ صافی‌های وردرپرس ویرایش شوند.
+# هر تغییری در دستورالعمل‌های بین این نشان‌گرها بازنویشی خواهند شد.
+# END TURBO_FAST_404
+# BEGIN TURBO_SSL_SECURITY
+# دستورالعمل‌های (خطوط) بین "BEGIN TURBO_SSL_SECURITY" و "END TURBO_SSL_SECURITY"
+# به طور پویا تولید شده‌اند، و فقط باید به وسیلهٔ صافی‌های وردرپرس ویرایش شوند.
+# هر تغییری در دستورالعمل‌های بین این نشان‌گرها بازنویشی خواهند شد.
+# END TURBO_SSL_SECURITY

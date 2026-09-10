@@ -1,0 +1,1 @@
+{"label":"apache-rocket-r1","vus":50,"duration":"30s","rps":759.17961094065,"ttfb_ms":{"p50":55.332527,"p95":63.819977,"avg":55.699737273842715,"max":87.386988},"error_rate":0,"requests":22816}

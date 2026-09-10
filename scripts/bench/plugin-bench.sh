@@ -8,7 +8,7 @@ LABEL="${2:?short label}"
 ARENAS="${3:-nginx apache ols}"
 BASE=https://bench.fama.co.ir
 WP="wp --allow-root --path=/var/www/bench"
-ALL_CACHE="turbo litespeed-cache wp-rocket w3-total-cache wp-super-cache wp-fastest-cache"
+ALL_CACHE="turbo litespeed-cache wp-rocket w3-total-cache wp-super-cache wp-fastest-cache wp-optimize cache-enabler cache-warmer"
 mkdir -p results
 
 purge() {
@@ -44,6 +44,8 @@ chown -R www-data:www-data /var/www/bench/wp-content
 $WP plugin list --format=csv --fields=name,status,version > "results/${LABEL}-plugins-state.csv"
 
 # --- VERIFICATION GATE: مدرک فعال بودن مکانیزم کش قبل از اندازه‌گیری ---
+# پرایم: بعضی افزونه‌ها (از جمله توربو) drop-in را با اولین درخواست وب می‌سازند نه در فعال‌سازی CLI
+curl -so /dev/null "https://bench.fama.co.ir/"; sleep 1; curl -so /dev/null "https://bench.fama.co.ir/"; sleep 1
 {
   echo "advanced-cache.php size: $(stat -c%s /var/www/bench/wp-content/advanced-cache.php 2>/dev/null || echo missing)"
   grep -n "WP_CACHE" /var/www/bench/wp-config.php

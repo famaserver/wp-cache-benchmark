@@ -1,0 +1,10 @@
+[cold3-r1] run 1: 2611.9 ms
+[cold3-r1] median=2611.9 ms  p95=2611.9 ms  min=2611.9  max=2611.9  (n=1)
+[cold3-r2] run 1: 1064.8 ms
+[cold3-r2] median=1064.8 ms  p95=1064.8 ms  min=1064.8  max=1064.8  (n=1)
+[cold3-r3] run 1: 1048.9 ms
+[cold3-r3] median=1048.9 ms  p95=1048.9 ms  min=1048.9  max=1048.9  (n=1)
+[cold3-r4] run 1: 1056.6 ms
+[cold3-r4] median=1056.6 ms  p95=1056.6 ms  min=1056.6  max=1056.6  (n=1)
+[cold3-r5] run 1: 1038.5 ms
+[cold3-r5] median=1038.5 ms  p95=1038.5 ms  min=1038.5  max=1038.5  (n=1)

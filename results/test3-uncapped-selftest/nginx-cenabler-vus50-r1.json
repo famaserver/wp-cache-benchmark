@@ -1,0 +1,1 @@
+{"label":"nginx-cenabler-r1","vus":50,"duration":"30s","rps":849.4283285790821,"ttfb_ms":{"p50":41.825642,"p95":52.893646,"avg":51.37186260064262,"max":4966.481179},"error_rate":0,"requests":25521}

@@ -50,3 +50,13 @@ Same protocol as every other run; verification gate passed (drop-in 14 KB active
    front-end round.
 
 Raw data: [`turbo-3.2.4-selftest/`](turbo-3.2.4-selftest/)
+
+## Addendum (2026-09-10): the `advanced-cache.php size: missing` line in the verification artifact
+
+The gate snapshot was taken immediately after WP-CLI activation. In 3.2.4 the
+drop-in was only written on an admin settings-save (or later via the plugin's
+admin-path self-heal), so the gate read "missing" while the load-test headers
+correctly showed `x-turbo-cache-engine: dropin` once the drop-in materialized
+mid-run. Turbo Cache 3.3.0+ writes the drop-in during activation itself, and
+the gate script now primes the site before its snapshot
+(`scripts/bench/plugin-bench.sh`). The original artifact is kept unmodified.

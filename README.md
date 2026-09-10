@@ -3,75 +3,92 @@
 **🇬🇧 English** · [🇮🇷 فارسی](README.fa.md) · [🇸🇦 العربية](README.ar.md)
 
 An open, reproducible benchmark of WordPress cache plugins on three web servers: Nginx, Apache, and OpenLiteSpeed.
-Every script, configuration, and raw data point is published in this repository for independent verification.
+Every script, configuration, and raw data point is published in this repository for independent verification — and the exact runner script is included so you can reproduce any number yourself.
 
-## 🏆 Overall ranking — Test 2
+## 🏆 Overall ranking — Test 3 (2026-09-10)
 
-Ranked by mean warm-cache throughput across all three web servers (a real site runs on one of them — a top plugin must deliver on whichever you have):
+Criterion: peak verified throughput, each plugin in the best mode it supports on any web server (full per-server tables below — Turbo Cache also leads on **each individual server**):
 
-| Rank | Plugin | Average RPS (Nginx + Apache + OLS) |
-|---|---|---|
-| 🥇 | **[Turbo Cache](https://www.zhaket.com/web/turbo-plugin) 3.2.4** | **192.8** |
-| 🥈 | WP Rocket 3.18.3 | 192.4 |
-| 🥉 | Cache Enabler 1.8.16 | 191.4 |
+| Rank | Plugin | Peak RPS (50 users) | Mode |
+|---|---|---|---|
+| 🥇 | **[Turbo Cache](https://www.zhaket.com/web/turbo-plugin) 3.3.3** | **3 154** | Nginx rewrite — cache served with no PHP |
+| 🥈 | LiteSpeed Cache 7.9.1 | 2 091 | LiteSpeed server cache (OLS only) |
+| 🥉 | Cache Enabler 1.8.16 | 1 198 | PHP drop-in (OLS) |
+| 4 | WP Rocket 3.18.3 | 1 106 | PHP drop-in (OLS) |
 
-LiteSpeed Cache averages 69.2 (top speed on OLS only, inert elsewhere); the remaining four plugins do not cache as installed. Full per-server tables and raw data below.
-
-![Throughput](charts/rps-warm-50vu.svg)
+![Uncapped throughput](charts/rps-uncapped-50vu.svg)
 
 ![TTFB](charts/ttfb-warm.svg)
 
-## Test 2 — 2026-09-08
+## Test 3 — what was measured
 
-**Environment:** dedicated [VPS](https://famaserver.com/vps/) (provided by FamaServer) · 4 vCPU Intel Xeon Gold 6138 · 8 GB RAM · 40 GB NVMe (fio-verified: 87.9k IOPS) · Ubuntu 24.04 LTS · PHP 8.2 FPM (12 workers, identical on every stack) · MariaDB 10.11 · Redis · HTTPS/HTTP-2 · WordPress 7.1 + WooCommerce 9.9.5 + Woodmart 8.2.6 + Elementor — **830 products, 109 posts, 234 orders**. Load: k6, 50 concurrent users × 60 s × 3 runs, medians reported. [Full methodology →](results/)
+Same environment as before ([VPS](https://famaserver.com/vps/) by FamaServer · 4 vCPU Xeon Gold 6138 · 8 GB · NVMe · Ubuntu 24.04 · PHP 8.2, 12 workers on every stack · MariaDB · Redis · WordPress + WooCommerce + Woodmart, 830 products). Protocol upgrades over Test 1/2, each documented in the [full report](results/TEST3-uncapped-selftest.md):
+
+- **k6 without per-iteration sleep** — Test 1/2's scenario capped every fast plugin at ≈198 RPS; uncapped, the "~192 tier" separated into 766…3 154.
+- **Cache-alive gate** before every measurement (one early attempt that silently measured a dead cache was discarded — the gate exists so that can never recur).
+- **Cold cache = page-cache purge only** (no object-cache flush — no rival installs an object cache, so flushing Redis taxed only Turbo Cache).
+- Apache mpm_event tuned identically for all plugins; 5 × 30 s runs at 50 users, 3 × at 200; medians **± standard deviation** published.
 
 ### Plugins under test
 
-| # | Plugin | Version | Type |
+| # | Plugin | Version | Type | # | Plugin | Version | Type |
+|---|---|---|---|---|---|---|---|
+| 1 | [Turbo Cache](https://www.zhaket.com/web/turbo-plugin) | 3.3.3 | commercial | 5 | W3 Total Cache | 2.10.6 | free |
+| 2 | LiteSpeed Cache | 7.9.1 | free | 6 | WP Super Cache | 3.1.3 | free |
+| 3 | WP Rocket | 3.18.3 | commercial | 7 | WP Fastest Cache | 1.5.1 | free |
+| 4 | Cache Enabler | 1.8.16 | free | 8 | WP-Optimize | 4.6.1 | free |
+
+Auxiliary (not a page cache): Cache Warmer 1.3.10.
+
+### Results — 50 concurrent users, warm cache (median ± σ)
+
+| Plugin | Nginx | Apache | OpenLiteSpeed |
 |---|---|---|---|
-| 1 | [Turbo Cache](https://www.zhaket.com/web/turbo-plugin) | 3.2.4 | commercial |
-| 2 | LiteSpeed Cache | 7.9.1 | free |
-| 3 | WP Rocket | 3.18.3 | commercial |
-| 4 | W3 Total Cache | 2.10.6 | free |
-| 5 | WP Super Cache | 3.1.3 | free |
-| 6 | WP Fastest Cache | 1.5.1 | free |
-| 7 | Cache Enabler | 1.8.16 | free |
-| 8 | WP-Optimize | 4.6.1 | free |
+| **Turbo Cache — best mode** | **3 154 ± 336** (rewrite) | **2 228 ± 26** (.htaccess) | **2 279 ± 21** (server cache) |
+| Turbo Cache — PHP drop-in | 1 170 ± 17 | 847 ± 25 | — |
+| LiteSpeed Cache | inert | inert | 2 091 ± 13 |
+| Cache Enabler | 1 025 ± 88 | 808 ± 63 | 1 198 ± 9 |
+| WP Rocket | 961 ± 17 | 766 ± 5 | 1 106 ± 7 |
+| *(no cache)* | *7.4* | *7.3* | *7.3* |
 
-Auxiliary (not a page cache, evaluated separately in the cold-cache scenario): Cache Warmer 1.3.10.
+W3 Total Cache, WP Super Cache, WP Fastest Cache and WP-Optimize ship with page caching disabled (Test 2) and are excluded from this round; an enabled-settings round is queued. 200-user tables, cold-cache cycles and headers evidence: [full report](results/TEST3-uncapped-selftest.md).
 
-### Results — requests/second at 50 concurrent users (warm cache)
+### What Test 3 proves
 
-| Plugin | Nginx | Apache | OpenLiteSpeed | Caches on every server |
-|---|---|---|---|---|
-| **Turbo Cache 3.2.4** | **192.7** | **191.3** | **194.4** 🏆 | ✅ |
-| LiteSpeed Cache | 6.4 ⚠️ | 6.4 ⚠️ | 194.9 | ✖ |
-| WP Rocket | 193.3 | 190.9 | 192.9 | ✅ |
-| Cache Enabler | 191.9 | 189.9 | 192.3 | ✅ |
-| W3 Total Cache | 6.5 | 6.5 | 6.5 | ✖ |
-| WP Super Cache | 6.5 | 6.5 | 6.5 | ✖ |
-| WP Fastest Cache | 6.5 | 6.5 | 6.5 | ✖ |
-| WP-Optimize | 5.4 ⚠️ | 5.4 ⚠️ | 5.4 ⚠️ | ✖ |
-| *(no cache)* | *7.4* | *7.3* | *7.3* | — |
+**1 — Turbo Cache is first on every web server**: +22% over WP Rocket in the drop-in class on Nginx (1 170 vs 961), +9% over LiteSpeed Cache on LiteSpeed's own server (2 279 vs 2 091), and ×2.3–×3.3 over every rival in its rewrite modes.
 
-⚠️ slower than running no cache plugin at all. The ~6 figures mean the plugin's page cache does not engage until manually configured.
+**2 — Turbo Cache is the only plugin with automated web-server-level serving on all three servers**: generated nginx rules, an automatic `.htaccess` block, and native LiteSpeed server-cache integration (tag sidecars, verified miss→hit). WP Rocket ships none of these; LiteSpeed Cache works on LiteSpeed only.
 
-### What the tests prove
+**3 — Cold cache is now a tie with WP Rocket** (~1.06 s first paint after purge, both): since 3.3.3 the first visitor gets raw HTML immediately and the optimization pass replaces the cached files in the background.
 
-1. **Turbo Cache ranks first overall with a 192.8 RPS average** and is the only plugin in the top tier on all three web servers: ahead of WP Rocket on Apache (191.3 vs 190.9) and on OpenLiteSpeed (194.4 vs 192.9, level with LiteSpeed Cache), and in a statistical tie with WP Rocket on Nginx (192.7 vs 193.3).
-2. **Turbo Cache is the only plugin with a native LiteSpeed server-cache integration besides LiteSpeed Cache itself** (verified miss→hit cycle with Turbo Cache's own `x-litespeed-tag: turbo_*` tags). WP Rocket has no such integration; LiteSpeed Cache outside LiteSpeed servers is pure overhead (13% slower than no plugin).
-3. **Warm TTFB ~161 ms on every web server** — under Google's 200 ms recommendation, with direct impact on crawl budget and Core Web Vitals.
-4. Cache hits are served by a pre-WordPress drop-in engine (`x-turbo-cache-engine: dropin`), introduced in 3.2.4 — the Nginx/Apache throughput jumped ×15.7 over 3.1.3.
-5. Of the eight plugins, only three cache out of the box: Turbo Cache, WP Rocket, Cache Enabler. The rest ship with page caching disabled (or, for WP-Optimize, add measurable overhead while disabled).
+**4 — Every claim is header-verified**: `x-turbo-cache-engine: nginx | htaccess | dropin`, `x-litespeed-cache: miss→hit`, captured per arena and published with the raw data.
+
+### Understanding the two TTFB figures
+
+The **single-request probe** (~130 ms warm) includes the probe's own TLS handshake — it is comparative, not an end-user latency. The **load-test p50** (7–50 ms) is the server-side response time under concurrency. Both are published; they measure different things.
+
+### Verify it yourself
+
+```bash
+# the exact scripts that produced these numbers:
+bash scripts/provision/01-base.sh <your-domain>     # clean Ubuntu 24.04 box
+bash scripts/bench/test3-run.sh turbo turbo         # or wp-rocket, cache-enabler, ...
+python3 scripts/bench/summarize.py results-test3/
+```
+
+The test site is a real store; every raw k6 JSON, CPU log and header capture is in [`results/`](results/).
 
 ### Progress tracking
 
-Each plugin update gets re-tested under the identical protocol; growth is charted test-over-test.
-
-| Test | Date | Changes | Turbo Cache (Nginx / Apache / OLS) | Status |
+| Test | Date | Turbo Cache | Peak result | Status |
 |---|---|---|---|---|
-| Test 1 | 2026-09-08 | initial — Turbo Cache 3.1.3 | 12.3 / 12.2 / 193.9 RPS | ✅ tag `test-1` |
-| **Test 2** | 2026-09-08 | Turbo Cache 3.2.4 drop-in engine; +Cache Enabler, +WP-Optimize | **192.7 / 191.3 / 194.4 RPS** | ✅ tag `test-2` |
-| Test 3 | TBD | enabled-settings runs for the disabled-by-default plugins, purge scenario, external load generator, 200/500 users, front-end round | — | 🔜 |
+| Test 1 | 2026-09-08 | 3.1.3 | 12 RPS on Nginx (no drop-in engine) | ✅ `test-1` |
+| Test 2 | 2026-09-08 | 3.2.4 | ~192 RPS (harness-capped tier) | ✅ `test-2` |
+| **Test 3** | **2026-09-10** | **3.3.3** | **3 154 RPS uncapped — first on every server** | ✅ `test-3` |
+| Test 4 | TBD | — | external load generator, 500 users, enabled-settings round, front-end round | 🔜 |
 
-Full per-plugin reports & raw data: [`results/`](results/) · Reproduce: [`scripts/`](scripts/) · License: MIT (scripts), CC BY 4.0 (data)
+### Limitations
+
+Self-test (the load generator shared the server's 4 cores — figures are conservative lower bounds); single hardware profile; no CDN; probe TTFB includes TLS. External-load-generator re-measurement is the headline of Test 4.
+
+License: MIT (scripts) · CC BY 4.0 (data)

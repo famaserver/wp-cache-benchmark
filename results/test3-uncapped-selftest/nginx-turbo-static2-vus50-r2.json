@@ -1,0 +1,1 @@
+{"label":"nginx-turbo-static2-r2","vus":50,"duration":"30s","rps":3168.5818260664973,"ttfb_ms":{"p50":7.772093,"p95":23.713044,"avg":9.512744731212091,"max":60.37275},"error_rate":0,"requests":95101}
