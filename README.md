@@ -78,6 +78,10 @@ python3 scripts/bench/summarize.py results-test3/
 
 The test site is a real store; every raw k6 JSON, CPU log and header capture is in [`results/`](results/).
 
+### Tests archive
+
+Every previous round stays permanently available with its full environment specification, reports and raw data: **[results/ — tests archive](results/README.md)** (git tags `test-1`, `test-2`, `test-3`).
+
 ### Progress tracking
 
 | Test | Date | Turbo Cache | Peak result | Status |

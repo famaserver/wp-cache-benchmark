@@ -1,5 +1,43 @@
 # Test 3 — uncapped throughput round — 2026-09-10
 
+## Environment and prerequisites — full specification
+
+Everything below was identical for every plugin measured in this report. Where a value changed between test rounds it is stated explicitly.
+
+**Test server** (dedicated VPS provided by FamaServer, VMware virtualization, no control panel, no other workloads):
+
+| Component | Exact value |
+|---|---|
+| CPU | Intel(R) Xeon(R) Gold 6138 @ 2.00GHz — 4 vCPU |
+| RAM | 8 GB |
+| Disk | 40 GB NVMe-backed — measured with fio: 87,900 IOPS 4k random read; 64,400 IOPS 4k random write; 1.47 GB/s sequential read |
+| Network | ~130/160 Mbit/s international (load generator runs locally — see the self-test limitation) |
+| OS | Ubuntu 24.04.4 LTS |
+| PHP | 8.2.33 — FPM static pool, exactly 12 workers; OPcache 256 MB; memory_limit 256M; identical limits on the lsphp 8.2 stack used by OpenLiteSpeed |
+| Database | MariaDB 10.11.14 — innodb_buffer_pool_size 2G, max_connections 300 (fixed for all runs) |
+| Web servers | Nginx 1.24.0 · Apache 2.4.58 (mpm_event) · OpenLiteSpeed 1.9.2 — one active at a time via arena-switch.sh; site files, database and PHP untouched between switches |
+| TLS | Let's Encrypt certificate, HTTPS enforced, HTTP/2 |
+| Loaders | ionCube 15.5.0 and SourceGuardian 15.x on both PHP stacks |
+| Object cache | Redis 7 (512 MB, allkeys-lru) present on the host from 2026-09-09; only Turbo Cache ships an object-cache drop-in — no rival plugin uses it |
+| Apache tuning | mpm_event MaxRequestWorkers 400, ThreadsPerChild 50 — applied identically for every plugin (defaults saturate at 150 connections at 200 VUs) |
+
+**Test site** — https://bench.fama.co.ir (live):
+
+| Component | Exact value |
+|---|---|
+| WordPress | 7.1 |
+| WooCommerce | 9.9.5 |
+| Theme | Woodmart 8.2.6 (full demo import) |
+| Page builder | Elementor 3.30.2 |
+| Content | 830 published products, 109 posts, 234 orders, 15+ pages |
+| Permalinks | /%postname%/ |
+| URL mix per iteration | home, /shop/, 3 product pages, 2 posts (bench/urls.txt) |
+
+**Plugin versions measured in this report:** Turbo Cache 3.3.3 · WP Rocket 3.18.3 · LiteSpeed Cache 7.9.1 · Cache Enabler 1.8.16 — each measured alone, every other cache plugin deactivated and every cache store wiped between plugins.
+
+**Load tool:** k6 v2.2.0, executed on the test server itself (self-test). Scenario: scripts/k6/load-test2.js (no per-iteration sleep), orchestrated by scripts/bench/test3-run.sh.
+
+
 Runner: [`scripts/bench/test3-run.sh`](../scripts/bench/test3-run.sh) + [`scripts/k6/load-test2.js`](../scripts/k6/load-test2.js) — the exact scripts that produced every number below. Raw k6 JSON for every single run: [`test3-uncapped-selftest/`](test3-uncapped-selftest/).
 
 ## What changed vs Test 1/2 — and why
